@@ -5,38 +5,52 @@ import { Button } from '@/components/ui/button';
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Animated Background Elements - Updated colors */}
+      {/* Enhanced Grid Background */}
+      <div className="absolute inset-0 grid-overlay opacity-30"></div>
+      
+      {/* Animated Background Elements with Coral Glow */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-portfolio-coral/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-portfolio-orange/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-portfolio-red/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-20 left-10 w-64 h-64 bg-portfolio-coral/10 rounded-full blur-3xl animate-float nr-glow"></div>
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-portfolio-coral-light/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-portfolio-coral-neon/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
+          {/* NR Logo Display */}
+          <div className="mb-8 flex justify-center">
+            <div className="nr-logo-container w-24 h-24 rounded-xl overflow-hidden animate-glow-pulse">
+              <img 
+                src="/lovable-uploads/4c8d6a1c-1fe6-431b-b3fe-7968a07a9d5e.png" 
+                alt="NR Designs Logo" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 animate-slide-up">
             <span className="text-white">Neha Patil</span>
             <br />
-            <span className="gradient-text">IT Engineer & Creative Thinker</span>
+            <span className="coral-gradient-text">IT Engineer & Creative Thinker</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl md:text-2xl text-portfolio-grid-gray mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             Blending backend logic with frontend magic, one line of code at a time.
           </p>
 
           {/* Brief Bio */}
-          <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.4s' }}>
+          <p className="text-lg text-portfolio-grid-gray/80 mb-12 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.4s' }}>
             Java + Spring Boot backend developer with a passion for clean APIs, frontend enthusiasm, 
-            and the creative spark behind <span className="gradient-text font-semibold">NR</span> design studio.
+            and the creative spark behind <span className="coral-gradient-text font-semibold">NR</span> design studio.
           </p>
 
-          {/* CTA Buttons - Updated colors */}
+          {/* Enhanced CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
             <Button 
               size="lg" 
-              className="nr-gradient hover:opacity-90 transition-opacity shadow-lg"
+              className="futuristic-btn text-white font-semibold px-8 py-3"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Projects
@@ -44,7 +58,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-portfolio-coral text-portfolio-coral hover:bg-portfolio-coral hover:text-white"
+              className="tech-border border-portfolio-coral text-portfolio-coral hover:bg-portfolio-coral hover:text-white font-semibold px-8 py-3 transition-all duration-300"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Let's Connect
@@ -52,9 +66,11 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Scroll Indicator - Updated color */}
+        {/* Enhanced Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="text-portfolio-coral" size={24} />
+          <div className="p-2 rounded-full border border-portfolio-coral/30 bg-portfolio-coral/10">
+            <ArrowDown className="text-portfolio-coral animate-neon-glow" size={24} />
+          </div>
         </div>
       </div>
     </section>

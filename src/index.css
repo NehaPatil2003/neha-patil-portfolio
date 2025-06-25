@@ -3,48 +3,48 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Portfolio Design System - Updated to match NR logo */
+/* Portfolio Design System - Refined Based on NR Logo */
 
 @layer base {
   :root {
-    --background: 15 20 25;
-    --foreground: 255 255 255;
+    --background: 0 0 0; /* Rich Black */
+    --foreground: 255 255 255; /* Pure White */
 
-    --card: 26 32 44;
+    --card: 10 10 10; /* Rich Black variant */
     --card-foreground: 255 255 255;
 
-    --popover: 26 32 44;
+    --popover: 10 10 10;
     --popover-foreground: 255 255 255;
 
-    --primary: 255 107 107;
+    --primary: 255 104 104; /* Coral */
     --primary-foreground: 255 255 255;
 
-    --secondary: 30 41 59;
+    --secondary: 26 26 26; /* Dark Gray */
     --secondary-foreground: 255 255 255;
 
-    --muted: 30 41 59;
-    --muted-foreground: 148 163 184;
+    --muted: 26 26 26;
+    --muted-foreground: 204 204 204; /* Grid Gray */
 
-    --accent: 255 140 66;
+    --accent: 255 122 162; /* Coral Neon */
     --accent-foreground: 255 255 255;
 
-    --destructive: 255 107 107;
+    --destructive: 255 104 104;
     --destructive-foreground: 255 255 255;
 
-    --border: 30 41 59;
-    --input: 30 41 59;
-    --ring: 255 107 107;
+    --border: 51 51 51; /* Gray Medium */
+    --input: 26 26 26;
+    --ring: 255 104 104;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 15 20 25;
+    --sidebar-background: 0 0 0;
     --sidebar-foreground: 255 255 255;
-    --sidebar-primary: 255 107 107;
+    --sidebar-primary: 255 104 104;
     --sidebar-primary-foreground: 255 255 255;
-    --sidebar-accent: 30 41 59;
+    --sidebar-accent: 26 26 26;
     --sidebar-accent-foreground: 255 255 255;
-    --sidebar-border: 30 41 59;
-    --sidebar-ring: 255 107 107;
+    --sidebar-border: 51 51 51;
+    --sidebar-ring: 255 104 104;
   }
 }
 
@@ -54,8 +54,12 @@
   }
 
   body {
-    @apply bg-portfolio-navy text-foreground font-inter;
-    background: linear-gradient(135deg, #0f1419 0%, #1a202c 100%);
+    @apply bg-portfolio-black text-white font-inter;
+    background: 
+      linear-gradient(rgba(255, 104, 104, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 104, 104, 0.03) 1px, transparent 1px),
+      linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+    background-size: 30px 30px, 30px 30px, 100% 100%;
   }
 
   html {
@@ -64,24 +68,82 @@
 }
 
 @layer components {
-  .gradient-text {
-    @apply bg-gradient-to-r from-portfolio-coral via-portfolio-orange to-portfolio-red bg-clip-text text-transparent;
+  .coral-gradient-text {
+    @apply bg-gradient-to-r from-portfolio-coral via-portfolio-coral-light to-portfolio-coral-neon bg-clip-text text-transparent;
   }
   
-  .nr-gradient {
-    @apply bg-gradient-to-r from-portfolio-coral via-portfolio-orange to-portfolio-red;
+  .coral-gradient-bg {
+    @apply bg-gradient-to-r from-portfolio-coral via-portfolio-coral-light to-portfolio-coral-neon;
+  }
+  
+  .neon-gradient-bg {
+    @apply bg-gradient-to-r from-portfolio-coral to-portfolio-coral-neon;
   }
   
   .glass-card {
-    @apply backdrop-blur-lg bg-white/5 border border-white/10;
+    @apply backdrop-blur-lg bg-white/5 border border-portfolio-coral/20;
+    box-shadow: 0 8px 32px rgba(255, 104, 104, 0.1);
+  }
+  
+  .neon-card {
+    @apply backdrop-blur-lg bg-portfolio-rich-black/80 border border-portfolio-coral/30;
+    box-shadow: 
+      0 0 20px rgba(255, 104, 104, 0.2),
+      inset 0 1px 0 rgba(255, 179, 179, 0.1);
   }
   
   .hover-lift {
-    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+    @apply transition-all duration-300 hover:-translate-y-2;
+  }
+
+  .hover-lift:hover {
+    box-shadow: 
+      0 20px 40px rgba(255, 104, 104, 0.2),
+      0 0 30px rgba(255, 122, 162, 0.3);
   }
 
   .nr-glow {
-    box-shadow: 0 0 30px rgba(255, 107, 107, 0.3);
+    box-shadow: 
+      0 0 20px rgba(255, 104, 104, 0.4),
+      0 0 40px rgba(255, 179, 179, 0.2);
+  }
+
+  .nr-logo-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .nr-logo-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 179, 179, 0.4), transparent);
+    animation: sweep 3s ease-in-out infinite;
+  }
+
+  .grid-overlay {
+    background-image: 
+      linear-gradient(rgba(204, 204, 204, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(204, 204, 204, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+
+  .tech-border {
+    position: relative;
+  }
+
+  .tech-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: linear-gradient(135deg, #FF6868, #FF7AA2);
+    border-radius: 12px;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
   }
 }
 
@@ -91,14 +153,44 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(15, 20, 25);
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, rgb(255, 107, 107), rgb(255, 140, 66));
+  background: linear-gradient(to bottom, #FF6868, #FF7AA2);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, rgb(255, 153, 153), rgb(255, 165, 102));
+  background: linear-gradient(to bottom, #FFB3B3, #FF7AA2);
+}
+
+/* Futuristic button styles */
+.futuristic-btn {
+  position: relative;
+  background: linear-gradient(135deg, #FF6868, #FF7AA2);
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.futuristic-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.futuristic-btn:hover::before {
+  transform: translateX(100%);
+}
+
+.futuristic-btn:hover {
+  box-shadow: 
+    0 0 25px rgba(255, 104, 104, 0.5),
+    0 0 50px rgba(255, 122, 162, 0.3);
+  transform: translateY(-2px);
 }

@@ -28,77 +28,82 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 relative">
-      <div className="container mx-auto px-4">
+      {/* Subtle grid background */}
+      <div className="absolute inset-0 grid-overlay opacity-20"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
-              About <span className="gradient-text">Me</span>
+              About <span className="coral-gradient-text">Me</span>
             </h2>
-            <div className="w-24 h-1 nr-gradient mx-auto rounded-full"></div>
+            <div className="w-24 h-1 coral-gradient-bg mx-auto rounded-full animate-neon-glow"></div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Profile Image - Updated to include actual NR logo */}
+            {/* Enhanced Profile Image Section */}
             <div className="relative">
-              <div className="glass-card rounded-2xl p-8 text-center">
+              <div className="neon-card rounded-2xl p-8 text-center hover-lift">
                 <div className="w-64 h-64 mx-auto mb-6 relative">
-                  <div className="w-full h-full nr-gradient rounded-full p-1 nr-glow">
-                    <div className="w-full h-full bg-portfolio-navy rounded-full flex items-center justify-center">
-                      {/* Display the actual NR logo */}
-                      <img 
-                        src="/lovable-uploads/4c8d6a1c-1fe6-431b-b3fe-7968a07a9d5e.png" 
-                        alt="NR Logo" 
-                        className="w-32 h-32 object-contain"
-                      />
+                  <div className="w-full h-full coral-gradient-bg rounded-full p-1 animate-neon-glow">
+                    <div className="w-full h-full bg-portfolio-black rounded-full flex items-center justify-center">
+                      {/* Display the NR logo with enhanced styling */}
+                      <div className="nr-logo-container w-32 h-32 rounded-full overflow-hidden">
+                        <img 
+                          src="/lovable-uploads/4c8d6a1c-1fe6-431b-b3fe-7968a07a9d5e.png" 
+                          alt="NR Logo" 
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                     </div>
                   </div>
-                  <div className="absolute -top-4 -right-4 w-16 h-16 nr-gradient rounded-full flex items-center justify-center animate-glow">
+                  <div className="absolute -top-4 -right-4 w-16 h-16 neon-gradient-bg rounded-full flex items-center justify-center animate-glow-pulse">
                     <Heart className="w-8 h-8 text-white" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-playfair font-semibold text-white mb-2">Neha Hemant Patil</h3>
-                <p className="text-portfolio-coral font-medium">IT Engineer × Designer</p>
+                <p className="coral-gradient-text font-medium text-lg">IT Engineer × Designer</p>
               </div>
             </div>
 
             {/* Bio Content */}
             <div className="space-y-8">
-              <div className="glass-card rounded-2xl p-8">
-                <h3 className="text-2xl font-playfair font-semibold text-white mb-6">My Story</h3>
-                <div className="space-y-4 text-gray-300 leading-relaxed">
+              <div className="neon-card rounded-2xl p-8 hover-lift">
+                <h3 className="text-2xl font-playfair font-semibold text-white mb-6 coral-gradient-text">My Story</h3>
+                <div className="space-y-4 text-portfolio-grid-gray leading-relaxed">
                   <p>
-                    <span className="gradient-text font-semibold">Hello!</span> I'm Neha Patil — an IT engineering graduate, 
+                    <span className="coral-gradient-text font-semibold">Hello!</span> I'm Neha Patil — an IT engineering graduate, 
                     Java + Spring Boot backend developer with a love for clean APIs, and a frontend enthusiast skilled in 
                     HTML, CSS, JavaScript, and SQL. Oh, and yes — the creative spark behind <span className="text-portfolio-coral font-semibold">NR</span>.
                   </p>
                   <p>
-                    I'm an <span className="text-portfolio-orange font-semibold">absolute learner</span> and a true tech enthusiast 
+                    I'm an <span className="text-portfolio-coral-light font-semibold">absolute learner</span> and a true tech enthusiast 
                     who thrives on curiosity, consistency, and creation.
                   </p>
                   <p>
                     I believe great tech starts with great humans. And the best engineers? They build with clarity, 
-                    evolve with consistency — and that's exactly what I'm doing, <span className="gradient-text font-semibold">every single day</span>.
+                    evolve with consistency — and that's exactly what I'm doing, <span className="coral-gradient-text font-semibold">every single day</span>.
                   </p>
                 </div>
               </div>
 
-              {/* Education Timeline */}
-              <div className="glass-card rounded-2xl p-8">
-                <h3 className="text-2xl font-playfair font-semibold text-white mb-6">Education Timeline</h3>
+              {/* Enhanced Education Timeline */}
+              <div className="neon-card rounded-2xl p-8 hover-lift">
+                <h3 className="text-2xl font-playfair font-semibold text-white mb-6 coral-gradient-text">Education Timeline</h3>
                 <div className="space-y-6">
                   {education.map((item, index) => (
                     <div key={index} className="flex items-start space-x-4 group">
-                      <div className="flex-shrink-0 w-12 h-12 nr-gradient rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                      <div className="flex-shrink-0 w-12 h-12 coral-gradient-bg rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300 animate-neon-glow">
                         {item.icon}
                       </div>
                       <div className="flex-1">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                           <h4 className="text-lg font-semibold text-white">{item.degree}</h4>
-                          <span className="text-portfolio-orange font-medium">{item.period}</span>
+                          <span className="text-portfolio-coral-light font-medium">{item.period}</span>
                         </div>
-                        <p className="text-gray-300 mb-1">{item.institution}</p>
-                        <p className="text-portfolio-coral font-semibold">{item.score}</p>
+                        <p className="text-portfolio-grid-gray mb-1">{item.institution}</p>
+                        <p className="coral-gradient-text font-semibold">{item.score}</p>
                       </div>
                     </div>
                   ))}

@@ -26,14 +26,18 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'glass-card shadow-lg' : 'bg-transparent'
+      scrolled ? 'neon-card shadow-lg' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo - Updated to match NR branding */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 nr-gradient rounded-lg flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-sm">NR</span>
+          {/* Logo with enhanced glow and animation */}
+          <div className="flex items-center space-x-3">
+            <div className="nr-logo-container w-10 h-10 rounded-lg overflow-hidden animate-glow-pulse">
+              <img 
+                src="/lovable-uploads/4c8d6a1c-1fe6-431b-b3fe-7968a07a9d5e.png" 
+                alt="NR Designs Logo" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <span className="text-white font-playfair font-semibold text-lg">Neha Patil</span>
           </div>
@@ -44,9 +48,10 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-300 hover:text-portfolio-coral transition-colors duration-300 font-medium"
+                className="text-portfolio-grid-gray hover:text-portfolio-coral transition-colors duration-300 font-medium relative group"
               >
                 {item.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 coral-gradient-bg transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </div>
@@ -54,7 +59,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white p-2"
+            className="md:hidden text-white p-2 hover:text-portfolio-coral transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -62,12 +67,12 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden glass-card mt-2 rounded-lg p-4">
+          <div className="md:hidden neon-card mt-2 rounded-lg p-4">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="block py-2 text-gray-300 hover:text-portfolio-coral transition-colors duration-300"
+                className="block py-2 text-portfolio-grid-gray hover:text-portfolio-coral transition-colors duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
