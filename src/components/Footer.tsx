@@ -1,14 +1,14 @@
 
 const Footer = () => {
   return (
-    <footer className="py-12 border-t border-portfolio-purple/20">
+    <footer className="py-12 border-t border-portfolio-coral/20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between">
-            {/* Logo and Name */}
+            {/* Logo and Name - Updated with NR branding */}
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
-              <div className="w-10 h-10 bg-gradient-to-br from-portfolio-purple to-portfolio-coral rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">NP</span>
+              <div className="w-10 h-10 nr-gradient rounded-lg flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold">NR</span>
               </div>
               <div>
                 <h3 className="text-white font-playfair font-semibold text-lg">Neha Patil</h3>
@@ -27,10 +27,10 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* NR Watermark */}
-          <div className="mt-8 pt-8 border-t border-portfolio-purple/10 text-center">
+          {/* NR Watermark - Updated colors */}
+          <div className="mt-8 pt-8 border-t border-portfolio-coral/10 text-center">
             <div className="inline-flex items-center space-x-2 text-gray-500">
-              <div className="w-6 h-6 bg-gradient-to-br from-portfolio-coral/50 to-portfolio-teal/50 rounded-full flex items-center justify-center">
+              <div className="w-6 h-6 nr-gradient rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-xs">NR</span>
               </div>
               <span className="text-xs">Visual Identity by NR Creative Studio</span>

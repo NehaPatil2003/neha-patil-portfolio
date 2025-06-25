@@ -66,9 +66,12 @@ export default {
 				portfolio: {
 					navy: '#0f1419',
 					'navy-light': '#1a202c',
-					purple: '#8b5cf6',
-					'purple-light': '#a78bfa',
 					coral: '#ff6b6b',
+					orange: '#ff8c42',
+					'coral-light': '#ff9999',
+					'orange-dark': '#e07a39',
+					red: '#ff4757',
+					'red-dark': '#e84142',
 					teal: '#4ecdc4',
 					'purple-gradient-from': '#667eea',
 					'purple-gradient-to': '#764ba2'
@@ -101,8 +104,8 @@ export default {
 					'50%': { transform: 'translateY(-20px)' }
 				},
 				'glow': {
-					'0%, 100%': { boxShadow: '0 0 20px rgba(139, 92, 246, 0.3)' },
-					'50%': { boxShadow: '0 0 40px rgba(139, 92, 246, 0.6)' }
+					'0%, 100%': { boxShadow: '0 0 20px rgba(255, 107, 107, 0.3)' },
+					'50%': { boxShadow: '0 0 40px rgba(255, 140, 66, 0.6)' }
 				},
 				'slide-up': {
 					'0%': { transform: 'translateY(50px)', opacity: '0' },

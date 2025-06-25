@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Portfolio Design System */
+/* Portfolio Design System - Updated to match NR logo */
 
 @layer base {
   :root {
@@ -16,7 +16,7 @@
     --popover: 26 32 44;
     --popover-foreground: 255 255 255;
 
-    --primary: 139 92 246;
+    --primary: 255 107 107;
     --primary-foreground: 255 255 255;
 
     --secondary: 30 41 59;
@@ -25,7 +25,7 @@
     --muted: 30 41 59;
     --muted-foreground: 148 163 184;
 
-    --accent: 139 92 246;
+    --accent: 255 140 66;
     --accent-foreground: 255 255 255;
 
     --destructive: 255 107 107;
@@ -33,18 +33,18 @@
 
     --border: 30 41 59;
     --input: 30 41 59;
-    --ring: 139 92 246;
+    --ring: 255 107 107;
 
     --radius: 0.5rem;
 
     --sidebar-background: 15 20 25;
     --sidebar-foreground: 255 255 255;
-    --sidebar-primary: 139 92 246;
+    --sidebar-primary: 255 107 107;
     --sidebar-primary-foreground: 255 255 255;
     --sidebar-accent: 30 41 59;
     --sidebar-accent-foreground: 255 255 255;
     --sidebar-border: 30 41 59;
-    --sidebar-ring: 139 92 246;
+    --sidebar-ring: 255 107 107;
   }
 }
 
@@ -65,7 +65,11 @@
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-portfolio-purple to-portfolio-coral bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-portfolio-coral via-portfolio-orange to-portfolio-red bg-clip-text text-transparent;
+  }
+  
+  .nr-gradient {
+    @apply bg-gradient-to-r from-portfolio-coral via-portfolio-orange to-portfolio-red;
   }
   
   .glass-card {
@@ -74,6 +78,10 @@
   
   .hover-lift {
     @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
+  }
+
+  .nr-glow {
+    box-shadow: 0 0 30px rgba(255, 107, 107, 0.3);
   }
 }
 
@@ -87,10 +95,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(139, 92, 246);
+  background: linear-gradient(to bottom, rgb(255, 107, 107), rgb(255, 140, 66));
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(167, 139, 250);
+  background: linear-gradient(to bottom, rgb(255, 153, 153), rgb(255, 165, 102));
 }

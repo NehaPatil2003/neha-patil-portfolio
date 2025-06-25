@@ -30,10 +30,10 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          {/* Logo - Updated to match NR branding */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-portfolio-purple to-portfolio-coral rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">NP</span>
+            <div className="w-8 h-8 nr-gradient rounded-lg flex items-center justify-center shadow-lg">
+              <span className="text-white font-bold text-sm">NR</span>
             </div>
             <span className="text-white font-playfair font-semibold text-lg">Neha Patil</span>
           </div>
@@ -44,7 +44,7 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-300 hover:text-portfolio-purple transition-colors duration-300 font-medium"
+                className="text-gray-300 hover:text-portfolio-coral transition-colors duration-300 font-medium"
               >
                 {item.label}
               </a>
@@ -67,7 +67,7 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="block py-2 text-gray-300 hover:text-portfolio-purple transition-colors duration-300"
+                className="block py-2 text-gray-300 hover:text-portfolio-coral transition-colors duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}

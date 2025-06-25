@@ -35,25 +35,30 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
               About <span className="gradient-text">Me</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-portfolio-purple to-portfolio-coral mx-auto"></div>
+            <div className="w-24 h-1 nr-gradient mx-auto rounded-full"></div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Profile Image */}
+            {/* Profile Image - Updated to include actual NR logo */}
             <div className="relative">
               <div className="glass-card rounded-2xl p-8 text-center">
                 <div className="w-64 h-64 mx-auto mb-6 relative">
-                  <div className="w-full h-full bg-gradient-to-br from-portfolio-purple to-portfolio-coral rounded-full p-1">
+                  <div className="w-full h-full nr-gradient rounded-full p-1 nr-glow">
                     <div className="w-full h-full bg-portfolio-navy rounded-full flex items-center justify-center">
-                      <span className="text-6xl font-playfair font-bold gradient-text">NP</span>
+                      {/* Display the actual NR logo */}
+                      <img 
+                        src="/lovable-uploads/4c8d6a1c-1fe6-431b-b3fe-7968a07a9d5e.png" 
+                        alt="NR Logo" 
+                        className="w-32 h-32 object-contain"
+                      />
                     </div>
                   </div>
-                  <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-portfolio-coral to-portfolio-teal rounded-full flex items-center justify-center animate-glow">
+                  <div className="absolute -top-4 -right-4 w-16 h-16 nr-gradient rounded-full flex items-center justify-center animate-glow">
                     <Heart className="w-8 h-8 text-white" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-playfair font-semibold text-white mb-2">Neha Hemant Patil</h3>
-                <p className="text-portfolio-purple font-medium">IT Engineer × Designer</p>
+                <p className="text-portfolio-coral font-medium">IT Engineer × Designer</p>
               </div>
             </div>
 
@@ -68,7 +73,7 @@ const About = () => {
                     HTML, CSS, JavaScript, and SQL. Oh, and yes — the creative spark behind <span className="text-portfolio-coral font-semibold">NR</span>.
                   </p>
                   <p>
-                    I'm an <span className="text-portfolio-purple font-semibold">absolute learner</span> and a true tech enthusiast 
+                    I'm an <span className="text-portfolio-orange font-semibold">absolute learner</span> and a true tech enthusiast 
                     who thrives on curiosity, consistency, and creation.
                   </p>
                   <p>
@@ -84,13 +89,13 @@ const About = () => {
                 <div className="space-y-6">
                   {education.map((item, index) => (
                     <div key={index} className="flex items-start space-x-4 group">
-                      <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-portfolio-purple to-portfolio-coral rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                      <div className="flex-shrink-0 w-12 h-12 nr-gradient rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
                         {item.icon}
                       </div>
                       <div className="flex-1">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                           <h4 className="text-lg font-semibold text-white">{item.degree}</h4>
-                          <span className="text-portfolio-purple font-medium">{item.period}</span>
+                          <span className="text-portfolio-orange font-medium">{item.period}</span>
                         </div>
                         <p className="text-gray-300 mb-1">{item.institution}</p>
                         <p className="text-portfolio-coral font-semibold">{item.score}</p>
