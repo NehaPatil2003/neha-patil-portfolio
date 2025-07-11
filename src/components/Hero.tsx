@@ -17,33 +17,22 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          {/* NR Logo Display */}
-          <div className="mb-8 flex justify-center">
-            <div className="nr-logo-container w-24 h-24 rounded-xl overflow-hidden animate-glow-pulse">
-              <img 
-                src="/lovable-uploads/4c8d6a1c-1fe6-431b-b3fe-7968a07a9d5e.png" 
-                alt="NR Designs Logo" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 animate-slide-up">
             <span className="text-white">Neha Patil</span>
             <br />
-            <span className="coral-gradient-text">IT Engineer & Creative Thinker</span>
+            <span className="coral-gradient-text">IT Engineer & Backend Developer</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-portfolio-grid-gray mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Blending backend logic with frontend magic, one line of code at a time.
+            Building scalable backend solutions with Java + Spring Boot expertise.
           </p>
 
           {/* Brief Bio */}
           <p className="text-lg text-portfolio-grid-gray/80 mb-12 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            Java + Spring Boot backend developer with a passion for clean APIs, frontend enthusiasm, 
-            and the creative spark behind <span className="coral-gradient-text font-semibold">NR</span> design studio.
+            Passionate about clean APIs, database optimization, and full-stack development. 
+            Also the creative mind behind <span className="coral-gradient-text font-semibold">NR</span> design studio.
           </p>
 
           {/* Enhanced CTA Buttons */}
@@ -53,7 +42,7 @@ const Hero = () => {
               className="futuristic-btn text-white font-semibold px-8 py-3"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              View Projects
+              View My Projects
             </Button>
             <Button 
               size="lg" 
@@ -63,6 +52,13 @@ const Hero = () => {
             >
               Let's Connect
             </Button>
+          </div>
+
+          {/* Small NR Credit */}
+          <div className="mt-8 animate-slide-up" style={{ animationDelay: '0.8s' }}>
+            <p className="text-xs text-portfolio-grid-gray/60">
+              Visual design by <span className="coral-gradient-text">NR</span>
+            </p>
           </div>
         </div>
 

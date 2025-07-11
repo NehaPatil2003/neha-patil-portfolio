@@ -20,7 +20,7 @@ const Navigation = () => {
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
     { href: '#services', label: 'Services' },
-    { href: '#nr-creations', label: 'NR Creations' },
+    { href: '#nr-creations', label: 'NR Studio' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -30,16 +30,10 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo with enhanced glow and animation */}
+          {/* Logo with enhanced branding */}
           <div className="flex items-center space-x-3">
-            <div className="nr-logo-container w-10 h-10 rounded-lg overflow-hidden animate-glow-pulse">
-              <img 
-                src="/lovable-uploads/4c8d6a1c-1fe6-431b-b3fe-7968a07a9d5e.png" 
-                alt="NR Designs Logo" 
-                className="w-full h-full object-cover"
-              />
-            </div>
             <span className="text-white font-playfair font-semibold text-lg">Neha Patil</span>
+            <span className="text-portfolio-grid-gray text-sm">IT Engineer</span>
           </div>
 
           {/* Desktop Navigation */}

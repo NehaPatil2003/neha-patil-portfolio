@@ -1,5 +1,5 @@
 
-import { GraduationCap, Award, Heart } from 'lucide-react';
+import { GraduationCap, Award, Code, Database } from 'lucide-react';
 
 const About = () => {
   const education = [
@@ -7,7 +7,7 @@ const About = () => {
       period: '2021–2025',
       degree: 'B.Tech IT',
       institution: 'PCCOE Pune',
-      score: 'CGPA 8.26',
+      score: 'CGPA 8.35',
       icon: <GraduationCap className="w-6 h-6" />
     },
     {
@@ -46,44 +46,43 @@ const About = () => {
             <div className="relative">
               <div className="neon-card rounded-2xl p-8 text-center hover-lift">
                 <div className="w-64 h-64 mx-auto mb-6 relative">
-                  <div className="w-full h-full coral-gradient-bg rounded-full p-1 animate-neon-glow">
-                    <div className="w-full h-full bg-portfolio-black rounded-full flex items-center justify-center">
-                      {/* Display the NR logo with enhanced styling */}
-                      <div className="nr-logo-container w-32 h-32 rounded-full overflow-hidden">
-                        <img 
-                          src="/lovable-uploads/4c8d6a1c-1fe6-431b-b3fe-7968a07a9d5e.png" 
-                          alt="NR Logo" 
-                          className="w-full h-full object-cover"
-                        />
+                  <div className="w-full h-full coral-gradient-bg rounded-2xl p-1 animate-neon-glow">
+                    <div className="w-full h-full bg-portfolio-black rounded-2xl flex items-center justify-center border-2 border-dashed border-portfolio-coral/30">
+                      {/* Placeholder for profile photo */}
+                      <div className="text-center">
+                        <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-portfolio-coral/20 flex items-center justify-center">
+                          <Code className="w-10 h-10 text-portfolio-coral" />
+                        </div>
+                        <p className="text-portfolio-grid-gray text-sm">Your Photo Here</p>
                       </div>
                     </div>
                   </div>
                   <div className="absolute -top-4 -right-4 w-16 h-16 neon-gradient-bg rounded-full flex items-center justify-center animate-glow-pulse">
-                    <Heart className="w-8 h-8 text-white" />
+                    <Database className="w-8 h-8 text-white" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-playfair font-semibold text-white mb-2">Neha Hemant Patil</h3>
-                <p className="coral-gradient-text font-medium text-lg">IT Engineer × Designer</p>
+                <p className="coral-gradient-text font-medium text-lg">IT Engineer & Backend Developer</p>
               </div>
             </div>
 
             {/* Bio Content */}
             <div className="space-y-8">
               <div className="neon-card rounded-2xl p-8 hover-lift">
-                <h3 className="text-2xl font-playfair font-semibold text-white mb-6 coral-gradient-text">My Story</h3>
+                <h3 className="text-2xl font-playfair font-semibold text-white mb-6 coral-gradient-text">My Engineering Journey</h3>
                 <div className="space-y-4 text-portfolio-grid-gray leading-relaxed">
                   <p>
-                    <span className="coral-gradient-text font-semibold">Hello!</span> I'm Neha Patil — an IT engineering graduate, 
-                    Java + Spring Boot backend developer with a love for clean APIs, and a frontend enthusiast skilled in 
-                    HTML, CSS, JavaScript, and SQL. Oh, and yes — the creative spark behind <span className="text-portfolio-coral font-semibold">NR</span>.
+                    <span className="coral-gradient-text font-semibold">Hello!</span> I'm Neha Patil — an IT engineering graduate with expertise in 
+                    <span className="text-portfolio-coral font-semibold"> Java + Spring Boot backend development</span>, passionate about building clean, scalable APIs and robust database solutions.
                   </p>
                   <p>
-                    I'm an <span className="text-portfolio-coral-light font-semibold">absolute learner</span> and a true tech enthusiast 
-                    who thrives on curiosity, consistency, and creation.
+                    Skilled in <span className="text-portfolio-coral-light font-semibold">HTML, CSS, JavaScript, and SQL</span>, I bridge the gap between 
+                    backend logic and frontend experience. I'm an <span className="text-portfolio-coral-light font-semibold">absolute learner</span> who 
+                    thrives on solving complex technical challenges.
                   </p>
                   <p>
-                    I believe great tech starts with great humans. And the best engineers? They build with clarity, 
-                    evolve with consistency — and that's exactly what I'm doing, <span className="coral-gradient-text font-semibold">every single day</span>.
+                    Beyond engineering, I explore creative design through my brand <span className="coral-gradient-text font-semibold">NR</span> — 
+                    because great engineers think both logically and creatively.
                   </p>
                 </div>
               </div>
