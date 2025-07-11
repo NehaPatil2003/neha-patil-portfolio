@@ -21,18 +21,17 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 animate-slide-up">
             <span className="text-white">Neha Patil</span>
             <br />
-            <span className="coral-gradient-text">IT Engineer & Backend Developer</span>
+            <span className="coral-gradient-text">IT Engineer</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-portfolio-grid-gray mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Building scalable backend solutions with Java + Spring Boot expertise.
+            Building scalable backend solutions with Java + Spring Boot expertise
           </p>
 
           {/* Brief Bio */}
           <p className="text-lg text-portfolio-grid-gray/80 mb-12 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            Passionate about clean APIs, database optimization, and full-stack development. 
-            Also the creative mind behind <span className="coral-gradient-text font-semibold">NR</span> design studio.
+            Passionate about clean APIs, database optimization, and full-stack development
           </p>
 
           {/* Enhanced CTA Buttons */}
@@ -52,13 +51,6 @@ const Hero = () => {
             >
               Let's Connect
             </Button>
-          </div>
-
-          {/* Small NR Credit */}
-          <div className="mt-8 animate-slide-up" style={{ animationDelay: '0.8s' }}>
-            <p className="text-xs text-portfolio-grid-gray/60">
-              Visual design by <span className="coral-gradient-text">NR</span>
-            </p>
           </div>
         </div>
 
