@@ -20,7 +20,7 @@ const Navigation = () => {
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
     { href: '#services', label: 'Services' },
-    { href: '#nr-creations', label: 'NR Studio' },
+    { href: '#nr-creations', label: 'NR Creates' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -30,9 +30,9 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo with enhanced branding */}
+          {/* Professional Logo */}
           <div className="flex items-center space-x-3">
-            <span className="text-white font-playfair font-semibold text-lg">Neha Patil</span>
+            <span className="text-white font-playfair font-semibold text-xl">Neha Patil</span>
             <span className="text-portfolio-grid-gray text-sm">IT Engineer</span>
           </div>
 

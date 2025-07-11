@@ -3,12 +3,12 @@ import { Code, Database, Palette, Users, Lightbulb, MessageSquare } from 'lucide
 
 const Skills = () => {
   const technicalSkills = [
-    { name: 'Java & Spring Boot', level: 90, icon: <Code className="w-5 h-5" /> },
-    { name: 'RESTful APIs', level: 85, icon: <Code className="w-5 h-5" /> },
-    { name: 'SQL & Oracle SQL', level: 80, icon: <Database className="w-5 h-5" /> },
-    { name: 'HTML5 & CSS3', level: 85, icon: <Code className="w-5 h-5" /> },
-    { name: 'JavaScript', level: 75, icon: <Code className="w-5 h-5" /> },
-    { name: 'Firebase & Git', level: 80, icon: <Database className="w-5 h-5" /> },
+    { name: 'Java & Spring Boot', icon: <Code className="w-5 h-5" /> },
+    { name: 'RESTful APIs', icon: <Code className="w-5 h-5" /> },
+    { name: 'SQL & Oracle SQL', icon: <Database className="w-5 h-5" /> },
+    { name: 'HTML5 & CSS3', icon: <Code className="w-5 h-5" /> },
+    { name: 'JavaScript', icon: <Code className="w-5 h-5" /> },
+    { name: 'Firebase & Git', icon: <Database className="w-5 h-5" /> },
   ];
 
   const softSkills = [
@@ -37,23 +37,14 @@ const Skills = () => {
                 <Code className="w-8 h-8 text-portfolio-purple mr-3" />
                 Technical Skills
               </h3>
-              <div className="space-y-6">
+              <div className="grid grid-cols-1 gap-4">
                 {technicalSkills.map((skill, index) => (
                   <div key={index} className="group">
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="flex items-center space-x-3">
-                        <div className="text-portfolio-purple group-hover:text-portfolio-coral transition-colors duration-300">
-                          {skill.icon}
-                        </div>
-                        <span className="text-white font-medium">{skill.name}</span>
+                    <div className="flex items-center space-x-4 p-4 rounded-xl bg-portfolio-navy-light/50 hover:bg-portfolio-navy-light transition-all duration-300">
+                      <div className="text-portfolio-purple group-hover:text-portfolio-coral transition-colors duration-300">
+                        {skill.icon}
                       </div>
-                      <span className="text-portfolio-purple font-semibold">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-portfolio-navy-light rounded-full h-2 overflow-hidden">
-                      <div 
-                        className="h-full bg-gradient-to-r from-portfolio-purple to-portfolio-coral rounded-full transition-all duration-1000 ease-out"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
+                      <span className="text-white font-medium">{skill.name}</span>
                     </div>
                   </div>
                 ))}
