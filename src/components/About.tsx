@@ -8,57 +8,53 @@ const About = () => {
       degree: 'B.Tech IT',
       institution: 'PCCOE Pune',
       score: 'CGPA 8.35',
-      icon: <GraduationCap className="w-6 h-6" />
+      icon: <GraduationCap className="w-5 h-5" />
     },
     {
       period: '2020–2021',
       degree: '12th Grade',
       institution: 'PMT Mahila Kotecha College, Bhusaval',
       score: '90%',
-      icon: <Award className="w-6 h-6" />
+      icon: <Award className="w-5 h-5" />
     },
     {
       period: '2018–2019',
       degree: '10th Grade',
       institution: 'Shree Swaminarayan Gurukul, Savada',
       score: '84%',
-      icon: <Award className="w-6 h-6" />
+      icon: <Award className="w-5 h-5" />
     }
   ];
 
   return (
     <section id="about" className="py-20 relative">
-      {/* Subtle grid background */}
-      <div className="absolute inset-0 grid-overlay opacity-20"></div>
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
+          {/* Gentle Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
               About <span className="coral-gradient-text">Me</span>
             </h2>
-            <div className="w-24 h-1 coral-gradient-bg mx-auto rounded-full animate-neon-glow"></div>
+            <div className="w-24 h-1 sweet-gradient-bg mx-auto rounded-full animate-dreamy-glow"></div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Enhanced Profile Image Section */}
+            {/* Sweet Profile Section */}
             <div className="relative">
-              <div className="neon-card rounded-2xl p-8 text-center hover-lift">
+              <div className="sweet-card rounded-3xl p-8 text-center hover-float">
                 <div className="w-64 h-64 mx-auto mb-6 relative">
-                  <div className="w-full h-full coral-gradient-bg rounded-2xl p-1 animate-neon-glow">
-                    <div className="w-full h-full bg-portfolio-black rounded-2xl flex items-center justify-center border-2 border-dashed border-portfolio-coral/30">
-                      {/* Placeholder for profile photo */}
+                  <div className="w-full h-full sweet-gradient-bg rounded-3xl p-1 animate-sweet-pulse">
+                    <div className="w-full h-full bg-portfolio-black rounded-3xl flex items-center justify-center border-2 border-dashed border-pink-300/40">
                       <div className="text-center">
-                        <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-portfolio-coral/20 flex items-center justify-center">
-                          <Code className="w-10 h-10 text-portfolio-coral" />
+                        <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-pink-400/20 flex items-center justify-center sweet-glow">
+                          <Code className="w-8 h-8 text-pink-300" />
                         </div>
                         <p className="text-portfolio-grid-gray text-sm">Your Photo Here</p>
                       </div>
                     </div>
                   </div>
-                  <div className="absolute -top-4 -right-4 w-16 h-16 neon-gradient-bg rounded-full flex items-center justify-center animate-glow-pulse">
-                    <Database className="w-8 h-8 text-white" />
+                  <div className="absolute -top-4 -right-4 w-16 h-16 dreamy-gradient rounded-full flex items-center justify-center animate-sweet-pulse">
+                    <Database className="w-7 h-7 text-white" />
                   </div>
                 </div>
                 <h3 className="text-2xl font-playfair font-semibold text-white mb-2">Neha Hemant Patil</h3>
@@ -66,40 +62,39 @@ const About = () => {
               </div>
             </div>
 
-            {/* Bio Content */}
+            {/* Sweet Bio Content */}
             <div className="space-y-8">
-              <div className="neon-card rounded-2xl p-8 hover-lift">
-                <h3 className="text-2xl font-playfair font-semibold text-white mb-6 coral-gradient-text">My Engineering Journey</h3>
-                <div className="space-y-4 text-portfolio-grid-gray leading-relaxed">
-                  <p>
-                    <span className="coral-gradient-text font-semibold">Hello!</span> I'm Neha Patil — an IT engineering graduate with expertise in 
-                    <span className="text-portfolio-coral font-semibold"> Java + Spring Boot backend development</span>, passionate about building clean, scalable APIs and robust database solutions.
+              <div className="sweet-card rounded-3xl p-8 hover-float">
+                <h3 className="text-2xl font-playfair font-semibold text-white mb-6 coral-gradient-text">My Journey</h3>
+                <div className="space-y-6 text-portfolio-grid-gray leading-relaxed">
+                  <p className="text-lg">
+                    <span className="coral-gradient-text font-semibold">Hello!</span> I'm Neha — an IT engineering graduate passionate about 
+                    <span className="text-pink-300 font-medium"> crafting elegant backend solutions</span> with Java and Spring Boot.
                   </p>
-                  <p>
-                    Skilled in <span className="text-portfolio-coral-light font-semibold">HTML, CSS, JavaScript, and SQL</span>, I bridge the gap between 
-                    backend logic and frontend experience. I'm an <span className="text-portfolio-coral-light font-semibold">absolute learner</span> who 
-                    thrives on solving complex technical challenges.
+                  <p className="text-lg">
+                    I believe in <span className="text-rose-300 font-medium">clean code, scalable architecture</span>, and creating 
+                    digital experiences that make a difference. Every project is an opportunity to learn and grow.
                   </p>
-                  <p>
-                    Beyond engineering, I explore creative design through my brand <span className="coral-gradient-text font-semibold">NR</span> — 
-                    because great engineers think both logically and creatively.
+                  <p className="text-lg">
+                    When I'm not coding, I explore creative design through my brand <span className="coral-gradient-text font-semibold">NR</span> — 
+                    where logic meets creativity.
                   </p>
                 </div>
               </div>
 
-              {/* Enhanced Education Timeline */}
-              <div className="neon-card rounded-2xl p-8 hover-lift">
-                <h3 className="text-2xl font-playfair font-semibold text-white mb-6 coral-gradient-text">Education Timeline</h3>
+              {/* Sweet Education Timeline */}
+              <div className="sweet-card rounded-3xl p-8 hover-float">
+                <h3 className="text-2xl font-playfair font-semibold text-white mb-6 coral-gradient-text">Education</h3>
                 <div className="space-y-6">
                   {education.map((item, index) => (
                     <div key={index} className="flex items-start space-x-4 group">
-                      <div className="flex-shrink-0 w-12 h-12 coral-gradient-bg rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300 animate-neon-glow">
+                      <div className="flex-shrink-0 w-12 h-12 sweet-gradient-bg rounded-xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-500 sweet-glow">
                         {item.icon}
                       </div>
                       <div className="flex-1">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                           <h4 className="text-lg font-semibold text-white">{item.degree}</h4>
-                          <span className="text-portfolio-coral-light font-medium">{item.period}</span>
+                          <span className="text-pink-300 font-medium">{item.period}</span>
                         </div>
                         <p className="text-portfolio-grid-gray mb-1">{item.institution}</p>
                         <p className="coral-gradient-text font-semibold">{item.score}</p>
