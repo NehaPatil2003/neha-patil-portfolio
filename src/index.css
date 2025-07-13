@@ -7,7 +7,7 @@
 
 @layer base {
   :root {
-    --background: 0 0 5; /* Softer black */
+    --background: 10 10 15; /* Softer black */
     --foreground: 255 255 255; /* Pure White */
 
     --card: 15 15 20; /* Warmer dark */
@@ -37,7 +37,7 @@
 
     --radius: 1rem; /* More rounded */
 
-    --sidebar-background: 0 0 5;
+    --sidebar-background: 10 10 15;
     --sidebar-foreground: 255 255 255;
     --sidebar-primary: 255 134 134;
     --sidebar-primary-foreground: 255 255 255;
