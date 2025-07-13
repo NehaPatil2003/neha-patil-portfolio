@@ -1,5 +1,5 @@
 
-import { ExternalLink, Palette, Sparkles, Camera, Heart, Crown, Star } from 'lucide-react';
+import { ExternalLink, Palette, Sparkles, Camera, Heart, Crown, Star, Instagram } from 'lucide-react';
 
 const NRCreations = () => {
   const logoProjects = [
@@ -19,7 +19,7 @@ const NRCreations = () => {
     },
     {
       id: 3,
-      title: 'Sudarshan Digital',
+      title: 'Studarshan Digital',
       description: 'Creative studio for editing & printing',
       category: 'Digital Studio',
       image: '/lovable-uploads/e0e5aaa2-ed81-4254-b4f9-49fcc30f3f33.png',
@@ -47,23 +47,52 @@ const NRCreations = () => {
         <div className="max-w-6xl mx-auto">
           {/* Exclusive Section Header */}
           <div className="text-center mb-12">
-            <div className="flex items-center justify-center mb-4">
-              <Crown className="w-8 h-8 text-[#FF6868] mr-2" />
+            <div className="flex items-center justify-center mb-6">
+              <Crown className="w-8 h-8 text-[#FF6868] mr-3" />
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white">
                 <span className="logo-gradient-text">NR</span> Creates
               </h2>
-              <Crown className="w-8 h-8 text-[#FF6868] ml-2" />
+              <Crown className="w-8 h-8 text-[#FF6868] ml-3" />
             </div>
-            <div className="w-24 h-1 coral-gradient-bg mx-auto mb-6 rounded-full"></div>
-            <div className="neon-card rounded-2xl p-6 max-w-xl mx-auto">
-              <p className="text-[#CCCCCC] text-lg leading-relaxed flex items-center justify-center gap-2 mb-2">
-                <Star className="w-5 h-5 text-[#FF7AA2]" />
-                Exclusive Logo Designs - My Creative Hobby
-                <Star className="w-5 h-5 text-[#FF7AA2]" />
-              </p>
-              <p className="text-[#FF7AA2] font-medium text-sm italic">
-                "Quality over quantity - I choose my projects"
-              </p>
+            <div className="w-24 h-1 coral-gradient-bg mx-auto mb-8 rounded-full"></div>
+            
+            {/* Powerful Quote Section */}
+            <div className="neon-card rounded-3xl p-8 max-w-2xl mx-auto mb-8 border-2 border-[#FF7AA2]/30 magic-glow">
+              <div className="flex items-center justify-center mb-4">
+                <Star className="w-6 h-6 text-[#FF7AA2] mr-2" />
+                <h3 className="text-2xl font-playfair font-bold coral-gradient-text">Premium Logo Designs</h3>
+                <Star className="w-6 h-6 text-[#FF7AA2] ml-2" />
+              </div>
+              
+              <div className="relative">
+                <div className="text-6xl text-[#FF6868] font-playfair absolute -top-4 -left-2">"</div>
+                <p className="text-xl text-white font-medium leading-relaxed pl-8 pr-8 mb-4">
+                  Where <span className="coral-gradient-text font-bold">creativity meets precision</span> — 
+                  I don't just design logos, I craft <span className="text-[#FF7AA2] font-bold">visual identities</span> that leave a lasting impact.
+                </p>
+                <div className="text-6xl text-[#FF6868] font-playfair absolute -bottom-8 -right-2 rotate-180">"</div>
+              </div>
+              
+              <div className="flex items-center justify-center mt-6 space-x-3">
+                <div className="flex items-center space-x-2 bg-[#FF7AA2]/20 rounded-full px-4 py-2">
+                  <Crown className="w-4 h-4 text-[#FF6868]" />
+                  <span className="text-[#FF7AA2] font-bold text-sm">Exclusive • Selective • Premium</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Instagram Link */}
+            <div className="flex items-center justify-center mb-8">
+              <a 
+                href="https://www.instagram.com/nr_creations_official" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center space-x-3 bg-gradient-to-r from-[#FF6868] to-[#FF7AA2] rounded-full px-6 py-3 hover:opacity-90 transition-opacity magic-glow"
+              >
+                <Instagram className="w-5 h-5 text-white" />
+                <span className="text-white font-semibold">@nr_creations_official</span>
+                <ExternalLink className="w-4 h-4 text-white" />
+              </a>
             </div>
           </div>
 

@@ -16,7 +16,7 @@ const Projects = () => {
     },
     {
       title: 'Brewed Bliss Café',
-      description: 'Elegant café website with comprehensive REST APIs, beautiful UI, and smooth user experience.',
+      description: 'Beautiful café website with comprehensive REST APIs, stunning UI, and smooth user experience.',
       tech: ['HTML5', 'CSS3', 'JavaScript', 'Spring Boot'],
       image: '/lovable-uploads/474176f1-232a-4b81-8a8e-7ce8eafd9fa3.png',
       links: {
@@ -63,13 +63,13 @@ const Projects = () => {
     <section id="projects" className="py-20 relative">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
-          {/* Sweet Section Header */}
+          {/* Section Header */}
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
               My <span className="coral-gradient-text">Projects</span>
             </h2>
-            <div className="w-24 h-1 sweet-gradient-bg mx-auto mb-6 rounded-full"></div>
-            <p className="text-portfolio-grid-gray max-w-2xl mx-auto text-lg leading-relaxed">
+            <div className="w-24 h-1 coral-gradient-bg mx-auto mb-6 rounded-full"></div>
+            <p className="text-[#CCCCCC] max-w-2xl mx-auto text-lg leading-relaxed">
               Crafted with passion, built with precision
             </p>
           </div>
@@ -79,7 +79,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="sweet-card rounded-2xl overflow-hidden hover-float group"
+                className="neon-card rounded-2xl overflow-hidden hover-lift group"
               >
                 {/* Project Image */}
                 <div className="relative overflow-hidden h-48">
@@ -89,26 +89,26 @@ const Projects = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   {project.status && (
-                    <div className="absolute top-3 right-3 bg-pink-400 text-white px-3 py-1 rounded-full text-xs font-medium sweet-glow">
+                    <div className="absolute top-3 right-3 bg-[#FF7AA2] text-white px-3 py-1 rounded-full text-xs font-medium magic-glow">
                       {project.status}
                     </div>
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-portfolio-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-4">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-4">
                     <div className="flex space-x-3">
                       {project.links.live && (
-                        <Button size="sm" className="sweet-btn text-white text-xs px-4 py-2">
+                        <Button size="sm" className="coral-gradient-bg text-white text-xs px-4 py-2">
                           <ExternalLink className="w-3 h-3 mr-1" />
                           Live
                         </Button>
                       )}
                       {project.links.github && (
-                        <Button size="sm" variant="outline" className="border-pink-300 text-pink-300 hover:bg-pink-300 hover:text-portfolio-black text-xs px-4 py-2">
+                        <Button size="sm" variant="outline" className="border-[#FF7AA2] text-[#FF7AA2] hover:bg-[#FF7AA2] hover:text-white text-xs px-4 py-2">
                           <Github className="w-3 h-3 mr-1" />
                           Code
                         </Button>
                       )}
                       {project.links.paper && (
-                        <Button size="sm" className="sweet-btn text-white text-xs px-4 py-2">
+                        <Button size="sm" className="coral-gradient-bg text-white text-xs px-4 py-2">
                           <ExternalLink className="w-3 h-3 mr-1" />
                           Paper
                         </Button>
@@ -119,10 +119,10 @@ const Projects = () => {
 
                 {/* Project Content */}
                 <div className="p-6">
-                  <h3 className="text-lg font-playfair font-semibold text-white mb-3 group-hover:text-pink-300 transition-colors duration-300">
+                  <h3 className="text-lg font-playfair font-semibold text-white mb-3 group-hover:text-[#FF7AA2] transition-colors duration-300">
                     {project.title}
                   </h3>
-                  <p className="text-portfolio-grid-gray mb-4 text-sm leading-relaxed">
+                  <p className="text-[#CCCCCC] mb-4 text-sm leading-relaxed">
                     {project.description}
                   </p>
                   
@@ -131,7 +131,7 @@ const Projects = () => {
                     {project.tech.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-3 py-1 bg-pink-400/20 text-pink-300 rounded-full text-xs font-medium border border-pink-300/30"
+                        className="px-3 py-1 bg-[#FF7AA2]/20 text-[#FF7AA2] rounded-full text-xs font-medium border border-[#FF7AA2]/30"
                       >
                         {tech}
                       </span>
@@ -142,12 +142,12 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Sweet View More */}
+          {/* View More */}
           <div className="text-center mt-12">
             <Button 
               size="lg" 
               variant="outline" 
-              className="dreamy-border border-pink-300/40 text-pink-300 hover:bg-pink-400/10 hover:text-white px-8 py-3"
+              className="border-[#FF7AA2]/40 text-[#FF7AA2] hover:bg-[#FF7AA2]/10 hover:text-white px-8 py-3"
             >
               View All on GitHub
             </Button>

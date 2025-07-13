@@ -23,7 +23,7 @@ const Hero = () => {
 
           {/* Sweet Subheadline */}
           <p className="text-xl md:text-2xl text-[#CCCCCC] mb-8 animate-slide-up-gentle leading-relaxed" style={{ animationDelay: '0.2s' }}>
-            Crafting elegant backend solutions with passion & precision
+            Crafting backend solutions with passion & precision
           </p>
 
           {/* Gentle Bio */}
@@ -35,7 +35,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-slide-up-gentle" style={{ animationDelay: '0.6s' }}>
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-[#FF6868] via-[#FF7AA2] to-[#FFB3B3] text-white font-medium px-8 py-4 text-lg hover:opacity-90 transition-opacity border-0"
+              className="bg-gradient-to-r from-[#FF6868] via-[#FF7AA2] to-[#FFB3B3] text-white font-medium px-8 py-4 text-lg hover:opacity-90 transition-opacity border-0 shadow-lg"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View My Work

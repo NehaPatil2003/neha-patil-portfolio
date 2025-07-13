@@ -40,7 +40,7 @@ const Skills = () => {
               <div className="grid grid-cols-1 gap-4">
                 {technicalSkills.map((skill, index) => (
                   <div key={index} className="group">
-                    <div className="flex items-center space-x-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 border border-[#CCCCCC]/10">
+                    <div className="neon-card flex items-center space-x-4 p-4 rounded-xl hover:bg-white/10 transition-all duration-300">
                       <div className="text-[#FF7AA2] group-hover:text-[#FF6868] transition-colors duration-300">
                         {skill.icon}
                       </div>
@@ -60,7 +60,7 @@ const Skills = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {softSkills.map((skill, index) => (
                   <div key={index} className="group">
-                    <div className="flex flex-col items-center text-center p-6 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 hover:-translate-y-2 border border-[#CCCCCC]/10">
+                    <div className="neon-card flex flex-col items-center text-center p-6 rounded-xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
                       <div className="w-16 h-16 coral-gradient-bg rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                         <div className="text-white">
                           {skill.icon}
@@ -73,9 +73,9 @@ const Skills = () => {
               </div>
 
               {/* Special Achievement */}
-              <div className="mt-8 p-6 bg-gradient-to-r from-[#FF7AA2]/20 to-[#FF6868]/20 rounded-xl border border-[#FF7AA2]/30">
+              <div className="neon-card mt-8 p-6 bg-gradient-to-r from-[#FF7AA2]/20 to-[#FF6868]/20 rounded-xl border border-[#FF7AA2]/30">
                 <h4 className="text-lg font-semibold text-white mb-2">Leadership Experience</h4>
-                <p className="text-[#CCCCCC]">NSS Campaign Lead</p>
+                <p className="text-[#CCCCCC]">NSS Campaign Host & Group Leader</p>
                 <p className="text-sm text-[#FF7AA2] mt-1">Leading community service initiatives and team coordination</p>
               </div>
             </div>
