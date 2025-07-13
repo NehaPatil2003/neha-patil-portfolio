@@ -29,28 +29,28 @@ const Contact = () => {
       label: 'Email',
       value: 'nehahpatil2003@gmail.com',
       href: 'mailto:nehahpatil2003@gmail.com',
-      color: 'from-portfolio-coral to-portfolio-coral-light'
+      color: 'from-[#FF6868] to-[#FFB3B3]'
     },
     {
       icon: <Github className="w-6 h-6" />,
       label: 'GitHub',
       value: '@nehapatil',
       href: '#',
-      color: 'from-gray-700 to-gray-900'
+      color: 'from-[#FF7AA2] to-[#FFB3B3]'
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: 'LinkedIn',
       value: 'Neha Patil',
       href: '#',
-      color: 'from-blue-600 to-blue-800'
+      color: 'from-[#FF6868] to-[#FF7AA2]'
     },
     {
       icon: <Award className="w-6 h-6" />,
-      label: 'LeetCode',
+      label: 'HackerRank',
       value: '@nehapatil',
       href: '#',
-      color: 'from-orange-500 to-yellow-500'
+      color: 'from-[#FF7AA2] to-[#FFB3B3]'
     }
   ];
 
@@ -64,7 +64,7 @@ const Contact = () => {
               Let's <span className="coral-gradient-text">Connect</span>
             </h2>
             <div className="w-24 h-1 coral-gradient-bg mx-auto mb-8"></div>
-            <p className="text-portfolio-grid-gray max-w-2xl mx-auto">
+            <p className="text-[#CCCCCC] max-w-2xl mx-auto">
               Ready to collaborate on your next project? I'd love to hear from you.
             </p>
           </div>
@@ -77,7 +77,7 @@ const Contact = () => {
               </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-portfolio-grid-gray mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-[#CCCCCC] mb-2">
                     Full Name
                   </label>
                   <Input
@@ -85,13 +85,13 @@ const Contact = () => {
                     type="text"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="bg-portfolio-rich-black border-portfolio-coral/30 text-white focus:border-portfolio-coral"
+                    className="bg-black/50 border-[#CCCCCC]/30 text-white focus:border-[#FF6868]"
                     placeholder="Your full name"
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-portfolio-grid-gray mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-[#CCCCCC] mb-2">
                     Email
                   </label>
                   <Input
@@ -99,20 +99,20 @@ const Contact = () => {
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="bg-portfolio-rich-black border-portfolio-coral/30 text-white focus:border-portfolio-coral"
+                    className="bg-black/50 border-[#CCCCCC]/30 text-white focus:border-[#FF6868]"
                     placeholder="your.email@example.com"
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-portfolio-grid-gray mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-[#CCCCCC] mb-2">
                     Message
                   </label>
                   <Textarea
                     id="message"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="bg-portfolio-rich-black border-portfolio-coral/30 text-white focus:border-portfolio-coral min-h-[120px]"
+                    className="bg-black/50 border-[#CCCCCC]/30 text-white focus:border-[#FF6868] min-h-[120px]"
                     placeholder="Tell me about your project..."
                     required
                   />
@@ -136,17 +136,17 @@ const Contact = () => {
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <Mail className="w-5 h-5 text-portfolio-coral mr-3" />
+                    <Mail className="w-5 h-5 text-[#FF6868] mr-3" />
                     <div>
                       <p className="text-white font-medium">Email</p>
-                      <p className="text-portfolio-grid-gray">nehahpatil2003@gmail.com</p>
+                      <p className="text-[#CCCCCC]">nehahpatil2003@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <Mail className="w-5 h-5 text-portfolio-coral mr-3" />
+                    <Mail className="w-5 h-5 text-[#FF6868] mr-3" />
                     <div>
                       <p className="text-white font-medium">Phone</p>
-                      <p className="text-portfolio-grid-gray">+91 9096024455</p>
+                      <p className="text-[#CCCCCC]">+91 9096024455</p>
                     </div>
                   </div>
                 </div>
@@ -162,13 +162,13 @@ const Contact = () => {
                     <a
                       key={index}
                       href={link.href}
-                      className="group flex flex-col items-center p-4 rounded-xl bg-portfolio-rich-black/50 hover:bg-portfolio-rich-black transition-all duration-300 hover:-translate-y-2"
+                      className="group flex flex-col items-center p-4 rounded-xl bg-black/30 hover:bg-black/50 transition-all duration-300 hover:-translate-y-2"
                     >
                       <div className={`w-12 h-12 bg-gradient-to-br ${link.color} rounded-full flex items-center justify-center mb-3 text-white group-hover:scale-110 transition-transform duration-300`}>
                         {link.icon}
                       </div>
                       <h4 className="text-white font-semibold text-sm mb-1">{link.label}</h4>
-                      <p className="text-portfolio-grid-gray text-xs text-center">{link.value}</p>
+                      <p className="text-[#CCCCCC] text-xs text-center">{link.value}</p>
                     </a>
                   ))}
                 </div>
@@ -182,7 +182,7 @@ const Contact = () => {
                 <h3 className="text-xl font-playfair font-semibold text-white mb-2">
                   Available for Projects
                 </h3>
-                <p className="text-portfolio-grid-gray text-sm">
+                <p className="text-[#CCCCCC] text-sm">
                   Currently accepting new freelance projects and collaboration opportunities.
                 </p>
               </div>

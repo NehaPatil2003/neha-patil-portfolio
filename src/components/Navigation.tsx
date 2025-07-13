@@ -14,13 +14,34 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Magical cursor effect
+  useEffect(() => {
+    const cursor = document.createElement('div');
+    cursor.className = 'magic-cursor';
+    document.body.appendChild(cursor);
+
+    const moveCursor = (e: MouseEvent) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    };
+
+    document.addEventListener('mousemove', moveCursor);
+    
+    return () => {
+      document.removeEventListener('mousemove', moveCursor);
+      if (cursor.parentNode) {
+        cursor.parentNode.removeChild(cursor);
+      }
+    };
+  }, []);
+
   const navItems = [
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
     { href: '#services', label: 'Services' },
-    { href: '#nr-creates', label: 'NR Creates' },
+    { href: '#nr-creates', label: 'NR Creates', isSpecial: true },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -30,10 +51,10 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Professional Logo */}
+          {/* Logo */}
           <div className="flex items-center space-x-3">
             <span className="text-white font-playfair font-semibold text-xl">Neha Patil</span>
-            <span className="text-portfolio-grid-gray text-sm">IT Engineer</span>
+            <span className="text-[#CCCCCC] text-sm">IT Engineer</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -42,7 +63,11 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-portfolio-grid-gray hover:text-portfolio-coral transition-colors duration-300 font-medium relative group"
+                className={`${
+                  item.isSpecial 
+                    ? 'logo-gradient-text font-semibold' 
+                    : 'text-[#CCCCCC] hover:text-[#FF7AA2]'
+                } transition-colors duration-300 font-medium relative group`}
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 coral-gradient-bg transition-all duration-300 group-hover:w-full"></span>
@@ -53,7 +78,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white p-2 hover:text-portfolio-coral transition-colors"
+            className="md:hidden text-white p-2 hover:text-[#FF7AA2] transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -66,7 +91,11 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="block py-2 text-portfolio-grid-gray hover:text-portfolio-coral transition-colors duration-300"
+                className={`block py-2 ${
+                  item.isSpecial 
+                    ? 'logo-gradient-text font-semibold' 
+                    : 'text-[#CCCCCC] hover:text-[#FF7AA2]'
+                } transition-colors duration-300`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
