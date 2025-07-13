@@ -1,5 +1,5 @@
 
-import { ExternalLink, Palette, Sparkles } from 'lucide-react';
+import { ExternalLink, Palette, Sparkles, Camera, Heart } from 'lucide-react';
 
 const NRCreations = () => {
   const logoProjects = [
@@ -26,6 +26,21 @@ const NRCreations = () => {
     }
   ];
 
+  const personalImages = [
+    {
+      id: 1,
+      title: 'My Creative Workspace',
+      description: 'Where the magic happens - my design setup',
+      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=500&h=300&fit=crop',
+    },
+    {
+      id: 2,
+      title: 'Design Process',
+      description: 'Crafting logos with passion and precision',
+      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop',
+    }
+  ];
+
   return (
     <section id="nr-creates" className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
@@ -36,9 +51,36 @@ const NRCreations = () => {
               <span className="logo-gradient-text">NR</span> Creates
             </h2>
             <div className="w-24 h-1 coral-gradient-bg mx-auto mb-6 rounded-full"></div>
-            <p className="text-[#CCCCCC] max-w-xl mx-auto text-lg leading-relaxed">
-              Logo designs crafted with creativity
+            <p className="text-[#CCCCCC] max-w-xl mx-auto text-lg leading-relaxed flex items-center justify-center gap-2">
+              <Heart className="w-5 h-5 text-[#FF7AA2]" />
+              Logo designs - my creative hobby
+              <Heart className="w-5 h-5 text-[#FF7AA2]" />
             </p>
+          </div>
+
+          {/* Personal Setup Images */}
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            {personalImages.map((item) => (
+              <div key={item.id} className="group relative">
+                <div className="neon-card rounded-2xl overflow-hidden hover-lift transition-all duration-500">
+                  <div className="h-48 relative overflow-hidden">
+                    <img 
+                      src={item.image} 
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <h4 className="text-white font-playfair font-semibold mb-1">{item.title}</h4>
+                      <p className="text-[#CCCCCC] text-sm">{item.description}</p>
+                    </div>
+                    <div className="absolute top-3 right-3">
+                      <Camera className="w-5 h-5 text-[#FF7AA2]" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
 
           {/* Logo Gallery */}
@@ -93,7 +135,7 @@ const NRCreations = () => {
                 Need a Logo?
               </h3>
               <p className="text-[#CCCCCC] leading-relaxed mb-6">
-                Let's create something beautiful together
+                Let's create something beautiful together - it's my passion!
               </p>
               <button className="coral-gradient-bg text-white px-8 py-3 rounded-2xl font-medium text-lg hover:opacity-90 transition-opacity">
                 Get Started
