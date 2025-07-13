@@ -65,50 +65,44 @@
     cursor: none;
   }
 
-  /* Magical Cursor with Sparkles */
+  /* Attractive Magic Cursor */
   .magic-cursor {
     position: fixed;
-    width: 20px;
-    height: 20px;
-    background: radial-gradient(circle, #FF6868, #FFB3B3);
+    width: 16px;
+    height: 16px;
+    background: radial-gradient(circle, #FF6868, #FF7AA2);
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
     mix-blend-mode: difference;
-    transition: transform 0.1s ease;
+    transition: transform 0.15s ease, scale 0.15s ease;
+    box-shadow: 
+      0 0 20px rgba(255, 104, 104, 0.6),
+      0 0 40px rgba(255, 122, 162, 0.4);
   }
 
   .magic-cursor::before {
     content: '';
     position: absolute;
-    top: -10px;
-    left: -10px;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #FF7AA2;
+    top: -8px;
+    left: -8px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #FF7AA2;
     border-radius: 50%;
-    opacity: 0.5;
-    animation: magic-pulse 2s infinite;
+    opacity: 0.6;
+    animation: cursor-pulse 2s ease-in-out infinite;
   }
 
-  .magic-cursor::after {
-    content: '✨';
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    font-size: 12px;
-    animation: sparkle-orbit 3s linear infinite;
-    opacity: 0.8;
-  }
-
-  @keyframes magic-pulse {
-    0%, 100% { transform: scale(1); opacity: 0.5; }
-    50% { transform: scale(1.2); opacity: 0.8; }
-  }
-
-  @keyframes sparkle-orbit {
-    0% { transform: rotate(0deg) translateX(25px) rotate(0deg); }
-    100% { transform: rotate(360deg) translateX(25px) rotate(-360deg); }
+  @keyframes cursor-pulse {
+    0%, 100% { 
+      transform: scale(1); 
+      opacity: 0.6; 
+    }
+    50% { 
+      transform: scale(1.2); 
+      opacity: 0.8; 
+    }
   }
 }
 
@@ -144,6 +138,11 @@
     box-shadow: 
       0 0 25px rgba(255, 104, 104, 0.4),
       0 0 50px rgba(255, 122, 162, 0.2);
+  }
+
+  .glass-card {
+    @apply backdrop-blur-xl bg-white/5 border border-[#CCCCCC]/20 shadow-xl rounded-2xl;
+    box-shadow: 0 8px 32px rgba(255, 104, 104, 0.15);
   }
 }
 

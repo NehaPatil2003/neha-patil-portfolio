@@ -1,5 +1,5 @@
 
-import { ExternalLink, Palette, Sparkles, Camera, Heart } from 'lucide-react';
+import { ExternalLink, Palette, Sparkles, Camera, Heart, Crown, Star } from 'lucide-react';
 
 const NRCreations = () => {
   const logoProjects = [
@@ -45,20 +45,29 @@ const NRCreations = () => {
     <section id="nr-creates" className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
+          {/* Exclusive Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
-              <span className="logo-gradient-text">NR</span> Creates
-            </h2>
+            <div className="flex items-center justify-center mb-4">
+              <Crown className="w-8 h-8 text-[#FF6868] mr-2" />
+              <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white">
+                <span className="logo-gradient-text">NR</span> Creates
+              </h2>
+              <Crown className="w-8 h-8 text-[#FF6868] ml-2" />
+            </div>
             <div className="w-24 h-1 coral-gradient-bg mx-auto mb-6 rounded-full"></div>
-            <p className="text-[#CCCCCC] max-w-xl mx-auto text-lg leading-relaxed flex items-center justify-center gap-2">
-              <Heart className="w-5 h-5 text-[#FF7AA2]" />
-              Logo designs - my creative hobby
-              <Heart className="w-5 h-5 text-[#FF7AA2]" />
-            </p>
+            <div className="neon-card rounded-2xl p-6 max-w-xl mx-auto">
+              <p className="text-[#CCCCCC] text-lg leading-relaxed flex items-center justify-center gap-2 mb-2">
+                <Star className="w-5 h-5 text-[#FF7AA2]" />
+                Exclusive Logo Designs - My Creative Hobby
+                <Star className="w-5 h-5 text-[#FF7AA2]" />
+              </p>
+              <p className="text-[#FF7AA2] font-medium text-sm italic">
+                "Quality over quantity - I choose my projects"
+              </p>
+            </div>
           </div>
 
-          {/* Personal Setup Images */}
+          {/* Personal Setup Images - Premium Showcase */}
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {personalImages.map((item) => (
               <div key={item.id} className="group relative">
@@ -69,7 +78,13 @@ const NRCreations = () => {
                       alt={item.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+                    <div className="absolute top-3 left-3">
+                      <div className="flex items-center space-x-1 bg-black/60 backdrop-blur-md rounded-full px-3 py-1">
+                        <Crown className="w-4 h-4 text-[#FF6868]" />
+                        <span className="text-[#FF7AA2] text-xs font-bold">EXCLUSIVE</span>
+                      </div>
+                    </div>
                     <div className="absolute bottom-4 left-4 right-4">
                       <h4 className="text-white font-playfair font-semibold mb-1">{item.title}</h4>
                       <p className="text-[#CCCCCC] text-sm">{item.description}</p>
@@ -83,11 +98,11 @@ const NRCreations = () => {
             ))}
           </div>
 
-          {/* Logo Gallery */}
+          {/* Premium Logo Gallery */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {logoProjects.map((project, index) => (
               <div key={project.id} className="group relative">
-                <div className="neon-card rounded-2xl overflow-hidden hover-lift transition-all duration-500">
+                <div className="neon-card rounded-2xl overflow-hidden hover-lift transition-all duration-500 border-2 border-transparent hover:border-[#FF7AA2]/30">
                   {/* Logo Display */}
                   <div className="h-40 bg-gradient-to-br from-black to-black/80 relative flex items-center justify-center p-6">
                     <img 
@@ -96,14 +111,21 @@ const NRCreations = () => {
                       className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-300"
                     />
                     
-                    {/* Category Badge */}
-                    <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md rounded-full px-3 py-1 border border-[#CCCCCC]/20">
-                      <span className="text-[#FF7AA2] text-xs font-medium">{project.category}</span>
+                    {/* Premium Badge */}
+                    <div className="absolute top-3 right-3 bg-black/80 backdrop-blur-md rounded-full px-3 py-1 border border-[#FF7AA2]/40">
+                      <span className="text-[#FF7AA2] text-xs font-semibold">{project.category}</span>
+                    </div>
+
+                    {/* Exclusive Watermark */}
+                    <div className="absolute top-3 left-3">
+                      <div className="w-8 h-8 rounded-full bg-[#FF6868]/20 flex items-center justify-center">
+                        <Crown className="w-4 h-4 text-[#FF6868]" />
+                      </div>
                     </div>
                   </div>
 
                   {/* Project Info */}
-                  <div className="p-5">
+                  <div className="p-5 bg-gradient-to-b from-black/50 to-black/80">
                     <h4 className="text-lg font-playfair font-semibold text-white mb-2 group-hover:text-[#FF7AA2] transition-colors duration-300">
                       {project.title}
                     </h4>
@@ -113,9 +135,9 @@ const NRCreations = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center text-[#FF7AA2]">
                         <Sparkles className="w-4 h-4 mr-2" />
-                        <span className="text-xs font-medium">Design</span>
+                        <span className="text-xs font-medium">Premium Design</span>
                       </div>
-                      <button className="p-2 rounded-lg bg-[#FF7AA2]/10 text-[#FF7AA2] hover:bg-[#FF7AA2] hover:text-white transition-all duration-300">
+                      <button className="p-2 rounded-lg bg-[#FF7AA2]/10 text-[#FF7AA2] hover:bg-[#FF7AA2] hover:text-white transition-all duration-300 opacity-50 cursor-not-allowed">
                         <ExternalLink className="w-4 h-4" />
                       </button>
                     </div>
@@ -125,21 +147,29 @@ const NRCreations = () => {
             ))}
           </div>
 
-          {/* CTA Section */}
-          <div className="neon-card rounded-2xl p-8 text-center hover-lift">
+          {/* Exclusive CTA Section */}
+          <div className="neon-card rounded-2xl p-8 text-center hover-lift border-2 border-[#FF7AA2]/20">
             <div className="max-w-xl mx-auto">
-              <div className="w-16 h-16 rounded-2xl coral-gradient-bg mx-auto mb-4 flex items-center justify-center magic-glow">
+              <div className="w-16 h-16 rounded-2xl coral-gradient-bg mx-auto mb-4 flex items-center justify-center magic-glow relative">
                 <Palette className="w-8 h-8 text-white" />
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#FF6868] rounded-full flex items-center justify-center">
+                  <Crown className="w-3 h-3 text-white" />
+                </div>
               </div>
               <h3 className="text-2xl font-playfair font-semibold coral-gradient-text mb-3">
-                Need a Logo?
+                Need Premium Design?
               </h3>
-              <p className="text-[#CCCCCC] leading-relaxed mb-6">
-                Let's create something beautiful together - it's my passion!
+              <p className="text-[#CCCCCC] leading-relaxed mb-2">
+                I create exclusive logos for select clients only
               </p>
-              <button className="coral-gradient-bg text-white px-8 py-3 rounded-2xl font-medium text-lg hover:opacity-90 transition-opacity">
-                Get Started
+              <p className="text-[#FF7AA2] text-sm italic mb-6">
+                "Not everyone gets the NR treatment"
+              </p>
+              <button className="coral-gradient-bg text-white px-8 py-3 rounded-2xl font-medium text-lg hover:opacity-90 transition-opacity relative overflow-hidden group">
+                <span className="relative z-10">Apply for Design</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#FF7AA2] to-[#FF6868] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
+              <p className="text-xs text-[#CCCCCC]/60 mt-3">*Subject to availability and approval</p>
             </div>
           </div>
         </div>
