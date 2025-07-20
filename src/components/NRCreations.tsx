@@ -21,7 +21,7 @@ const NRCreations = () => {
       id: 3,
       title: 'Studarshan Digital',
       description: 'Creative studio for editing & printing',
-      category: 'Digital Studio',
+      category: 'Digital Lab',
       image: '/lovable-uploads/e0e5aaa2-ed81-4254-b4f9-49fcc30f3f33.png',
     }
   ];
@@ -29,15 +29,15 @@ const NRCreations = () => {
   const personalImages = [
     {
       id: 1,
-      title: 'My Creative Workspace',
-      description: 'Where the magic happens - my design setup',
-      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=500&h=300&fit=crop',
+      title: 'Behind the Brand',
+      description: 'The creative mind behind NR Creates',
+      image: '/lovable-uploads/15d61673-2b2a-4bbf-89a0-5e2db1443cf0.png',
     },
     {
       id: 2,
-      title: 'Design Process',
-      description: 'Crafting logos with passion and precision',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop',
+      title: 'Creative Vision',
+      description: 'Where ideas transform into visual stories',
+      image: '/lovable-uploads/fdad6372-7dd5-4ac8-bdbf-77df0eb348ce.png',
     }
   ];
 
@@ -50,7 +50,7 @@ const NRCreations = () => {
             <div className="flex items-center justify-center mb-6">
               <Crown className="w-8 h-8 text-[#FF6868] mr-3" />
               <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white">
-                <span className="logo-gradient-text">NR</span> Creates
+                <span className="coral-gradient-text">NR</span> Creates
               </h2>
               <Crown className="w-8 h-8 text-[#FF6868] ml-3" />
             </div>
@@ -83,16 +83,10 @@ const NRCreations = () => {
 
             {/* Instagram Link */}
             <div className="flex items-center justify-center mb-8">
-              <a 
-                href="https://www.instagram.com/nr_creations_official" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center space-x-3 bg-gradient-to-r from-[#FF6868] to-[#FF7AA2] rounded-full px-6 py-3 hover:opacity-90 transition-opacity magic-glow"
-              >
+              <div className="flex items-center space-x-3 bg-gradient-to-r from-[#FF6868] to-[#FF7AA2] rounded-full px-6 py-3 magic-glow">
                 <Instagram className="w-5 h-5 text-white" />
-                <span className="text-white font-semibold">@nr_creations_official</span>
-                <ExternalLink className="w-4 h-4 text-white" />
-              </a>
+                <span className="text-white font-semibold">@NR_Creates</span>
+              </div>
             </div>
           </div>
 
@@ -100,26 +94,35 @@ const NRCreations = () => {
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {personalImages.map((item) => (
               <div key={item.id} className="group relative">
-                <div className="neon-card rounded-2xl overflow-hidden hover-lift transition-all duration-500">
-                  <div className="h-48 relative overflow-hidden">
+                <div className="neon-card rounded-2xl overflow-hidden hover-lift transition-all duration-500 transform-3d">
+                  <div className="h-64 relative overflow-hidden perspective-1000">
                     <img 
                       src={item.image} 
                       alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      className="w-full h-full object-cover group-hover:scale-110 group-hover:translate-z-8 transition-all duration-500 transform-3d"
+                      style={{
+                        filter: 'brightness(1.1) contrast(1.1)',
+                        objectPosition: 'center 20%'
+                      }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
                     <div className="absolute top-3 left-3">
                       <div className="flex items-center space-x-1 bg-black/60 backdrop-blur-md rounded-full px-3 py-1">
                         <Crown className="w-4 h-4 text-[#FF6868]" />
                         <span className="text-[#FF7AA2] text-xs font-bold">EXCLUSIVE</span>
                       </div>
                     </div>
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <h4 className="text-white font-playfair font-semibold mb-1">{item.title}</h4>
-                      <p className="text-[#CCCCCC] text-sm">{item.description}</p>
+                    <div className="absolute bottom-4 left-4 right-4 transform group-hover:translate-y-[-4px] transition-transform duration-300">
+                      <h4 className="text-white font-playfair font-semibold mb-1 text-lg">{item.title}</h4>
+                      <p className="text-[#CCCCCC] text-sm leading-relaxed">{item.description}</p>
                     </div>
                     <div className="absolute top-3 right-3">
                       <Camera className="w-5 h-5 text-[#FF7AA2]" />
+                    </div>
+                    
+                    {/* 3D Pop-out Effect */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <div className="absolute inset-2 border-2 border-[#FF7AA2]/30 rounded-xl animate-pulse"></div>
                     </div>
                   </div>
                 </div>
@@ -176,29 +179,29 @@ const NRCreations = () => {
             ))}
           </div>
 
-          {/* Exclusive CTA Section */}
+          {/* Attractive CTA Section */}
           <div className="neon-card rounded-2xl p-8 text-center hover-lift border-2 border-[#FF7AA2]/20">
             <div className="max-w-xl mx-auto">
               <div className="w-16 h-16 rounded-2xl coral-gradient-bg mx-auto mb-4 flex items-center justify-center magic-glow relative">
                 <Palette className="w-8 h-8 text-white" />
                 <div className="absolute -top-2 -right-2 w-6 h-6 bg-[#FF6868] rounded-full flex items-center justify-center">
-                  <Crown className="w-3 h-3 text-white" />
+                  <Heart className="w-3 h-3 text-white" />
                 </div>
               </div>
               <h3 className="text-2xl font-playfair font-semibold coral-gradient-text mb-3">
-                Need Premium Design?
+                Let's Create Magic Together
               </h3>
-              <p className="text-[#CCCCCC] leading-relaxed mb-2">
-                I create exclusive logos for select clients only
+              <p className="text-[#CCCCCC] leading-relaxed mb-4">
+                Ready to bring your brand vision to life? I design logos that tell your unique story and make your business shine.
               </p>
-              <p className="text-[#FF7AA2] text-sm italic mb-6">
-                "Not everyone gets the NR treatment"
+              <p className="text-[#FF7AA2] text-sm mb-6 font-medium">
+                ✨ Professional • Unique • Memorable ✨
               </p>
               <button className="coral-gradient-bg text-white px-8 py-3 rounded-2xl font-medium text-lg hover:opacity-90 transition-opacity relative overflow-hidden group">
-                <span className="relative z-10">Apply for Design</span>
+                <span className="relative z-10">Start Your Design Journey</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#FF7AA2] to-[#FF6868] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
-              <p className="text-xs text-[#CCCCCC]/60 mt-3">*Subject to availability and approval</p>
+              <p className="text-xs text-[#CCCCCC]/60 mt-3">Let's discuss your project today!</p>
             </div>
           </div>
         </div>

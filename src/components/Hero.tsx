@@ -14,21 +14,22 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          {/* Elegant Headline */}
+          {/* Personal Headline */}
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-8 animate-slide-up-gentle">
+            <span className="text-white text-base md:text-lg font-normal mb-2 block">Hey, Myself</span>
             <span className="text-white">Neha Patil</span>
             <br />
             <span className="coral-gradient-text">IT Engineer</span>
           </h1>
 
-          {/* Sweet Subheadline */}
+          {/* Connectable Subheadline */}
           <p className="text-xl md:text-2xl text-[#CCCCCC] mb-8 animate-slide-up-gentle leading-relaxed" style={{ animationDelay: '0.2s' }}>
             Crafting backend solutions with passion & precision
           </p>
 
-          {/* Gentle Bio */}
+          {/* Clean Bio */}
           <p className="text-lg text-[#CCCCCC]/90 mb-12 max-w-2xl mx-auto animate-slide-up-gentle leading-relaxed" style={{ animationDelay: '0.4s' }}>
-            Java • Spring Boot • Full-Stack Development
+            Java • Spring Boot • Backend Development
           </p>
 
           {/* Sweet CTA Buttons */}
