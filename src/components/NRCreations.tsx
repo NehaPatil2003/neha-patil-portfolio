@@ -26,20 +26,12 @@ const NRCreations = () => {
     }
   ];
 
-  const personalImages = [
-    {
-      id: 1,
-      title: 'Behind the Brand',
-      description: 'The creative mind behind NR Creates',
-      image: '/lovable-uploads/15d61673-2b2a-4bbf-89a0-5e2db1443cf0.png',
-    },
-    {
-      id: 2,
-      title: 'Creative Vision',
-      description: 'Where ideas transform into visual stories',
-      image: '/lovable-uploads/fdad6372-7dd5-4ac8-bdbf-77df0eb348ce.png',
-    }
-  ];
+  const personalImage = {
+    id: 1,
+    title: 'The Creative Vision',
+    description: 'Behind every great design is a passionate creator',
+    image: '/lovable-uploads/fdad6372-7dd5-4ac8-bdbf-77df0eb348ce.png',
+  };
 
   return (
     <section id="nr-creates" className="py-20 relative overflow-hidden">
@@ -90,44 +82,31 @@ const NRCreations = () => {
             </div>
           </div>
 
-          {/* Personal Setup Images - Premium Showcase */}
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
-            {personalImages.map((item) => (
-              <div key={item.id} className="group relative">
-                <div className="neon-card rounded-2xl overflow-hidden hover-lift transition-all duration-500 transform-3d">
-                  <div className="h-64 relative overflow-hidden perspective-1000">
-                    <img 
-                      src={item.image} 
-                      alt={item.title}
-                      className="w-full h-full object-cover group-hover:scale-110 group-hover:translate-z-8 transition-all duration-500 transform-3d"
-                      style={{
-                        filter: 'brightness(1.1) contrast(1.1)',
-                        objectPosition: 'center 20%'
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-                    <div className="absolute top-3 left-3">
-                      <div className="flex items-center space-x-1 bg-black/60 backdrop-blur-md rounded-full px-3 py-1">
-                        <Crown className="w-4 h-4 text-[#FF6868]" />
-                        <span className="text-[#FF7AA2] text-xs font-bold">EXCLUSIVE</span>
-                      </div>
-                    </div>
-                    <div className="absolute bottom-4 left-4 right-4 transform group-hover:translate-y-[-4px] transition-transform duration-300">
-                      <h4 className="text-white font-playfair font-semibold mb-1 text-lg">{item.title}</h4>
-                      <p className="text-[#CCCCCC] text-sm leading-relaxed">{item.description}</p>
-                    </div>
-                    <div className="absolute top-3 right-3">
-                      <Camera className="w-5 h-5 text-[#FF7AA2]" />
-                    </div>
-                    
-                    {/* 3D Pop-out Effect */}
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div className="absolute inset-2 border-2 border-[#FF7AA2]/30 rounded-xl animate-pulse"></div>
-                    </div>
+          {/* Personal Photo Showcase */}
+          <div className="flex justify-center mb-12">
+            <div className="group relative max-w-md">
+              <div className="neon-card rounded-2xl overflow-hidden hover-lift transition-all duration-500">
+                <div className="h-80 relative overflow-hidden">
+                  <img 
+                    src={personalImage.image} 
+                    alt={personalImage.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    style={{
+                      filter: 'brightness(1.1) contrast(1.1)',
+                      objectPosition: 'center 20%'
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
+                  <div className="absolute bottom-6 left-6 right-6 transform group-hover:translate-y-[-4px] transition-transform duration-300">
+                    <h4 className="text-white font-playfair font-semibold mb-2 text-xl">{personalImage.title}</h4>
+                    <p className="text-[#CCCCCC] leading-relaxed">{personalImage.description}</p>
+                  </div>
+                  <div className="absolute top-4 right-4">
+                    <Camera className="w-6 h-6 text-[#FF7AA2]" />
                   </div>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
 
           {/* Premium Logo Gallery */}

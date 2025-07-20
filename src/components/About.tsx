@@ -44,13 +44,16 @@ const About = () => {
               <div className="neon-card rounded-3xl p-8 text-center hover-lift">
                 <div className="w-64 h-64 mx-auto mb-6 relative">
                   <div className="w-full h-full coral-gradient-bg rounded-3xl p-1">
-                    <div className="w-full h-full bg-black rounded-3xl flex items-center justify-center border-2 border-dashed border-[#CCCCCC]/40">
-                      <div className="text-center">
-                        <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-[#FF7AA2]/20 flex items-center justify-center magic-glow">
-                          <Code className="w-8 h-8 text-[#FF7AA2]" />
-                        </div>
-                        <p className="text-[#CCCCCC] text-sm">Your Photo Here</p>
-                      </div>
+                    <div className="w-full h-full bg-black rounded-3xl overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/15d61673-2b2a-4bbf-89a0-5e2db1443cf0.png" 
+                        alt="Neha Patil"
+                        className="w-full h-full object-cover"
+                        style={{
+                          filter: 'brightness(1.1) contrast(1.1)',
+                          objectPosition: 'center 20%'
+                        }}
+                      />
                     </div>
                   </div>
                   <div className="absolute -top-4 -right-4 w-16 h-16 coral-gradient-bg rounded-full flex items-center justify-center">
