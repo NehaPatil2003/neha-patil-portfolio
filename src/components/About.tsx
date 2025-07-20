@@ -41,27 +41,39 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Profile Section */}
             <div className="relative">
-              <div className="neon-card rounded-3xl p-8 text-center hover-lift">
-                <div className="w-64 h-64 mx-auto mb-6 relative">
-                  <div className="w-full h-full coral-gradient-bg rounded-3xl p-1">
-                    <div className="w-full h-full bg-black rounded-3xl overflow-hidden">
-                      <img 
-                        src="/lovable-uploads/15d61673-2b2a-4bbf-89a0-5e2db1443cf0.png" 
-                        alt="Neha Patil"
-                        className="w-full h-full object-cover"
-                        style={{
-                          filter: 'brightness(1.1) contrast(1.1)',
-                          objectPosition: 'center 20%'
-                        }}
-                      />
-                    </div>
+              <div className="relative">
+                <div className="w-80 h-80 mx-auto mb-6 relative transform hover:scale-105 transition-all duration-500">
+                  {/* Floating photo without box */}
+                  <div className="absolute inset-0 rounded-full overflow-hidden shadow-2xl" 
+                       style={{
+                         transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg)',
+                         boxShadow: '0 25px 50px rgba(255, 104, 104, 0.4), 0 0 100px rgba(255, 122, 162, 0.3)'
+                       }}>
+                    <img 
+                      src="/lovable-uploads/15d61673-2b2a-4bbf-89a0-5e2db1443cf0.png" 
+                      alt="Neha Patil"
+                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                      style={{
+                        filter: 'brightness(1.2) contrast(1.1)',
+                        objectPosition: 'center 20%'
+                      }}
+                    />
                   </div>
-                  <div className="absolute -top-4 -right-4 w-16 h-16 coral-gradient-bg rounded-full flex items-center justify-center">
+                  
+                  {/* Floating elements around photo */}
+                  <div className="absolute -top-6 -right-6 w-16 h-16 coral-gradient-bg rounded-full flex items-center justify-center animate-bounce"
+                       style={{ animationDelay: '0.5s' }}>
                     <Database className="w-7 h-7 text-white" />
                   </div>
+                  
+                  <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-[#FF7AA2]/30 rounded-full animate-pulse"></div>
+                  <div className="absolute top-1/2 -right-8 w-8 h-8 bg-[#FF6868]/40 rounded-full animate-ping"></div>
                 </div>
-                <h3 className="text-2xl font-playfair font-semibold text-white mb-2">Neha Hemant Patil</h3>
-                <p className="coral-gradient-text font-medium text-lg">IT Engineer & Backend Developer</p>
+                
+                <div className="text-center relative z-10">
+                  <h3 className="text-2xl font-playfair font-semibold text-white mb-2">Neha Hemant Patil</h3>
+                  <p className="coral-gradient-text font-medium text-lg">IT Engineer & Backend Developer</p>
+                </div>
               </div>
             </div>
 

@@ -82,29 +82,40 @@ const NRCreations = () => {
             </div>
           </div>
 
-          {/* Personal Photo Showcase */}
-          <div className="flex justify-center mb-12">
-            <div className="group relative max-w-md">
-              <div className="neon-card rounded-2xl overflow-hidden hover-lift transition-all duration-500">
-                <div className="h-80 relative overflow-hidden">
+          {/* Free-floating Personal Photo */}
+          <div className="flex justify-center mb-12 relative">
+            <div className="relative">
+              <div className="w-96 h-96 relative transform hover:scale-105 transition-all duration-500">
+                {/* Main floating photo */}
+                <div className="absolute inset-0 rounded-2xl overflow-hidden" 
+                     style={{
+                       transform: 'perspective(1000px) rotateY(15deg) rotateX(-5deg)',
+                       boxShadow: '0 30px 60px rgba(255, 104, 104, 0.5), 0 0 120px rgba(255, 122, 162, 0.4)'
+                     }}>
                   <img 
                     src={personalImage.image} 
                     alt={personalImage.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500"
+                    className="w-full h-full object-cover hover:scale-110 transition-all duration-700"
                     style={{
-                      filter: 'brightness(1.1) contrast(1.1)',
+                      filter: 'brightness(1.2) contrast(1.1)',
                       objectPosition: 'center 20%'
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent"></div>
-                  <div className="absolute bottom-6 left-6 right-6 transform group-hover:translate-y-[-4px] transition-transform duration-300">
-                    <h4 className="text-white font-playfair font-semibold mb-2 text-xl">{personalImage.title}</h4>
-                    <p className="text-[#CCCCCC] leading-relaxed">{personalImage.description}</p>
-                  </div>
-                  <div className="absolute top-4 right-4">
-                    <Camera className="w-6 h-6 text-[#FF7AA2]" />
-                  </div>
                 </div>
+                
+                {/* Floating decorative elements */}
+                <div className="absolute -top-8 -left-8 w-20 h-20 bg-[#FF7AA2]/20 rounded-full animate-pulse"></div>
+                <div className="absolute -bottom-6 -right-6 w-16 h-16 coral-gradient-bg rounded-full flex items-center justify-center animate-bounce">
+                  <Camera className="w-8 h-8 text-white" />
+                </div>
+                <div className="absolute top-1/4 -left-12 w-10 h-10 bg-[#FF6868]/30 rounded-full animate-ping"></div>
+                <div className="absolute bottom-1/4 -right-10 w-6 h-6 bg-[#FFB3B3]/40 rounded-full animate-pulse"></div>
+              </div>
+              
+              {/* Floating text below */}
+              <div className="text-center mt-8 relative z-10">
+                <h4 className="text-2xl font-playfair font-semibold text-white mb-2">{personalImage.title}</h4>
+                <p className="text-[#CCCCCC] text-lg leading-relaxed">{personalImage.description}</p>
               </div>
             </div>
           </div>

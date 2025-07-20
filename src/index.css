@@ -65,12 +65,12 @@
     cursor: none;
   }
 
-  /* Sparkle Trail Cursor */
+  /* Sparkle Cursor - Fixed */
   body::before {
     content: '✨';
     position: fixed;
-    top: 0;
-    left: 0;
+    top: var(--cursor-y, 0);
+    left: var(--cursor-x, 0);
     pointer-events: none;
     z-index: 9999;
     font-size: 12px;
@@ -84,8 +84,8 @@
   body::after {
     content: '';
     position: fixed;
-    top: 0;
-    left: 0;
+    top: var(--cursor-y, 0);
+    left: var(--cursor-x, 0);
     width: 3px;
     height: 3px;
     background: radial-gradient(circle, #FF7AA2, transparent);
