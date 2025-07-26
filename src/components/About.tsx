@@ -44,7 +44,7 @@ const About = () => {
               <div className="relative">
                 <div className="w-80 h-80 mx-auto mb-6 relative transform hover:scale-105 transition-all duration-500">
                   {/* Floating photo without box */}
-                  <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl profile-photo" 
+                  <div className="absolute inset-0 rounded-full overflow-hidden shadow-2xl profile-photo" 
                        style={{
                          transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg) translateY(-30px)',
                          boxShadow: '0 30px 60px rgba(255, 104, 104, 0.5), 0 0 120px rgba(255, 122, 162, 0.4)',
