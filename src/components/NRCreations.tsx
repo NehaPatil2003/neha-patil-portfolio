@@ -91,7 +91,6 @@ const NRCreations = () => {
                      style={{
                        transform: 'perspective(1000px) rotateY(15deg) rotateX(-5deg) translateY(-40px)',
                        boxShadow: '0 40px 80px rgba(255, 104, 104, 0.6), 0 0 140px rgba(255, 122, 162, 0.5)',
-                       border: '4px solid rgba(255, 104, 104, 0.4)',
                        zIndex: 25
                      }}>
                   <img 

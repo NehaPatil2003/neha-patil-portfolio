@@ -48,7 +48,6 @@ const About = () => {
                        style={{
                          transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg) translateY(-30px)',
                          boxShadow: '0 30px 60px rgba(255, 104, 104, 0.5), 0 0 120px rgba(255, 122, 162, 0.4)',
-                         border: '3px solid rgba(255, 104, 104, 0.3)',
                          zIndex: 20
                        }}>
                     <img 
