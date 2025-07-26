@@ -30,12 +30,15 @@ const About = () => {
     <section id="about" className="py-20 relative">
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
+          {/* Enhanced Section Header */}
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-playfair font-bold text-white mb-8">
               About <span className="coral-gradient-text">Me</span>
             </h2>
-            <div className="w-24 h-1 coral-gradient-bg mx-auto rounded-full"></div>
+            <div className="w-32 h-1 coral-gradient-bg mx-auto mb-10"></div>
+            <p className="text-[#CCCCCC] max-w-3xl mx-auto text-lg leading-relaxed">
+              Passionate <span className="text-[#FF7AA2] font-semibold">IT Engineer</span> with a creative edge, bringing technical expertise and innovative solutions to transform ideas into reality.
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -78,23 +81,28 @@ const About = () => {
               </div>
             </div>
 
-            {/* Bio Content */}
-            <div className="space-y-8">
-              <div className="neon-card rounded-3xl p-8 hover-lift">
-                <h3 className="text-2xl font-playfair font-semibold text-white mb-6 coral-gradient-text">My Journey</h3>
-                <div className="space-y-6 text-[#CCCCCC] leading-relaxed">
-                  <p className="text-lg">
-                    <span className="coral-gradient-text font-semibold">Hello!</span> I'm Neha — an IT engineering graduate passionate about 
-                    <span className="text-[#FF7AA2] font-medium"> crafting elegant backend solutions</span> with Java and Spring Boot.
+            {/* Enhanced Bio Content */}
+            <div className="space-y-10">
+              <div className="neon-card rounded-3xl p-10 hover-lift border-2 border-[#FF7AA2]/20">
+                <h3 className="text-3xl font-playfair font-bold text-white mb-8 coral-gradient-text">IT Engineer & Problem Solver</h3>
+                <div className="space-y-8 text-[#CCCCCC] leading-relaxed">
+                  <p className="text-xl">
+                    <span className="coral-gradient-text font-bold text-2xl">Hello!</span> I'm Neha — a dedicated IT Engineer who transforms complex challenges into 
+                    <span className="text-[#FF7AA2] font-semibold"> elegant backend solutions</span> using Java, Spring Boot, and cutting-edge technologies.
                   </p>
-                  <p className="text-lg">
-                    I believe in <span className="text-[#FF7AA2] font-medium">clean code, scalable architecture</span>, and creating 
-                    digital experiences that make a difference. Every project is an opportunity to learn and grow.
+                  <p className="text-xl">
+                    I specialize in <span className="text-[#FF7AA2] font-semibold">scalable architecture, clean code practices</span>, and building 
+                    robust systems that power digital innovation. My approach combines technical precision with creative problem-solving.
                   </p>
-                  <p className="text-lg">
-                    When I'm not coding, I explore creative design through my brand <span className="coral-gradient-text font-semibold">NR</span> — 
-                    where logic meets creativity.
+                  <p className="text-xl">
+                    Beyond engineering, I channel my creativity through <span className="coral-gradient-text font-bold">NR Creates</span> — 
+                    my premium logo design brand where technical precision meets artistic vision.
                   </p>
+                  <div className="flex flex-wrap gap-3 mt-6">
+                    <span className="px-4 py-2 bg-[#FF7AA2]/20 rounded-full text-[#FF7AA2] font-medium">Backend Development</span>
+                    <span className="px-4 py-2 bg-[#FF6868]/20 rounded-full text-[#FF6868] font-medium">System Architecture</span>
+                    <span className="px-4 py-2 bg-[#FFB3B3]/20 rounded-full text-[#FFB3B3] font-medium">Creative Design</span>
+                  </div>
                 </div>
               </div>
 
