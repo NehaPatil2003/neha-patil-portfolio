@@ -25,7 +25,7 @@ const Skills = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-6">
-              My <span className="coral-gradient-text">Skills</span>
+              <span className="coral-gradient-text">Skills</span>
             </h2>
             <div className="w-24 h-1 coral-gradient-bg mx-auto"></div>
           </div>

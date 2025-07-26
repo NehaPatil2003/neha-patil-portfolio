@@ -87,13 +87,15 @@ const NRCreations = () => {
             <div className="relative">
               <div className="w-96 h-96 relative transform hover:scale-105 transition-all duration-500">
                 {/* Main floating photo */}
-                <div className="absolute inset-0 rounded-2xl overflow-hidden" 
+                <div className="absolute inset-0 rounded-3xl overflow-hidden profile-photo" 
                      style={{
-                       transform: 'perspective(1000px) rotateY(15deg) rotateX(-5deg)',
-                       boxShadow: '0 30px 60px rgba(255, 104, 104, 0.5), 0 0 120px rgba(255, 122, 162, 0.4)'
+                       transform: 'perspective(1000px) rotateY(15deg) rotateX(-5deg) translateY(-40px)',
+                       boxShadow: '0 40px 80px rgba(255, 104, 104, 0.6), 0 0 140px rgba(255, 122, 162, 0.5)',
+                       border: '4px solid rgba(255, 104, 104, 0.4)',
+                       zIndex: 25
                      }}>
                   <img 
-                    src={personalImage.image} 
+                    src="/lovable-uploads/d87ad24c-63fb-4cbb-8a79-475f367b7dd6.png" 
                     alt={personalImage.title}
                     className="w-full h-full object-cover hover:scale-110 transition-all duration-700"
                     style={{

@@ -44,13 +44,15 @@ const About = () => {
               <div className="relative">
                 <div className="w-80 h-80 mx-auto mb-6 relative transform hover:scale-105 transition-all duration-500">
                   {/* Floating photo without box */}
-                  <div className="absolute inset-0 rounded-full overflow-hidden shadow-2xl" 
+                  <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl profile-photo" 
                        style={{
-                         transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg)',
-                         boxShadow: '0 25px 50px rgba(255, 104, 104, 0.4), 0 0 100px rgba(255, 122, 162, 0.3)'
+                         transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg) translateY(-30px)',
+                         boxShadow: '0 30px 60px rgba(255, 104, 104, 0.5), 0 0 120px rgba(255, 122, 162, 0.4)',
+                         border: '3px solid rgba(255, 104, 104, 0.3)',
+                         zIndex: 20
                        }}>
                     <img 
-                      src="/lovable-uploads/15d61673-2b2a-4bbf-89a0-5e2db1443cf0.png" 
+                      src="/lovable-uploads/620baa25-54c0-4722-98f4-81d9b1bdfad1.png" 
                       alt="Neha Patil"
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                       style={{
