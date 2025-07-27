@@ -36,8 +36,8 @@ const About = () => {
               About <span className="coral-gradient-text">Me</span>
             </h2>
             <div className="w-32 h-1 coral-gradient-bg mx-auto mb-10"></div>
-            <p className="text-[#CCCCCC] max-w-3xl mx-auto text-lg leading-relaxed">
-              Dedicated <span className="text-[#FF7AA2] font-semibold">IT Engineer</span> seeking opportunities to contribute to innovative teams and build impactful solutions.
+            <p className="text-[#CCCCCC] max-w-2xl mx-auto text-lg leading-relaxed">
+              Passionate <span className="text-[#FF7AA2] font-semibold">IT Engineer</span> with expertise in Java, Spring Boot, and full-stack development.
             </p>
           </div>
 
@@ -45,25 +45,24 @@ const About = () => {
             {/* Profile Section */}
             <div className="relative">
               <div className="relative">
-                  <div className="w-80 h-80 mx-auto mb-6 relative group">
-                    {/* Square photo box with enhanced animation */}
-                    <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl profile-photo transform transition-all duration-700 group-hover:scale-105" 
+                  <div className="w-72 h-72 mx-auto mb-6 relative group">
+                    {/* Professional square photo box */}
+                    <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl profile-photo transform transition-all duration-500 group-hover:scale-105" 
                          style={{
-                           transform: 'perspective(1000px) rotateY(-8deg) rotateX(3deg)',
-                           boxShadow: '0 25px 50px rgba(255, 104, 104, 0.4), 0 0 100px rgba(255, 122, 162, 0.3)',
+                           boxShadow: '0 20px 40px rgba(255, 104, 104, 0.3), 0 0 80px rgba(255, 122, 162, 0.2)',
                            zIndex: 20
                          }}>
                       <img 
-                        src="/lovable-uploads/ac8369e9-7c81-46d2-bb01-680667bfa382.png" 
+                        src="/lovable-uploads/5c56ce14-3d2e-433e-81ab-ebf9bf063a80.png" 
                         alt="Neha Patil"
-                        className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+                        className="w-full h-full object-cover transition-all duration-500"
                         style={{
-                          filter: 'brightness(1.1) contrast(1.05) saturate(1.1)',
-                          objectPosition: 'center 25%'
+                          filter: 'brightness(1.05) contrast(1.02)',
+                          objectPosition: 'center'
                         }}
                       />
-                      {/* Subtle overlay for depth */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                      {/* Professional overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
                     </div>
                   
                   {/* Floating elements around photo */}
@@ -83,37 +82,37 @@ const About = () => {
               </div>
             </div>
 
-            {/* Enhanced Bio Content */}
-            <div className="space-y-10">
-              <div className="neon-card rounded-3xl p-10 hover-lift border-2 border-[#FF7AA2]/20">
-                <h3 className="text-3xl font-playfair font-bold text-white mb-8 coral-gradient-text">IT Engineer & Problem Solver</h3>
-                <div className="space-y-8 text-[#CCCCCC] leading-relaxed">
-                  <p className="text-xl">
-                    <span className="coral-gradient-text font-bold text-2xl">Hey,</span> I'm Neha — an IT Engineer who loves building meaningful solutions with 
+            {/* Bio Content */}
+            <div className="space-y-8">
+              <div className="neon-card rounded-2xl p-6 hover-lift border-2 border-[#FF7AA2]/20">
+                <h3 className="text-2xl font-playfair font-bold text-white mb-6 coral-gradient-text">IT Engineer & Problem Solver</h3>
+                <div className="space-y-6 text-[#CCCCCC] leading-relaxed">
+                  <p className="text-lg">
+                    <span className="coral-gradient-text font-bold text-xl">Hey,</span> I'm Neha — an IT Engineer who loves building meaningful solutions with 
                     <span className="text-[#FF7AA2] font-semibold">Java, Spring Boot</span>, and a problem-solver's mindset.
                   </p>
-                  <p className="text-xl">
+                  <p className="text-lg">
                     I care about writing <span className="text-[#FF7AA2] font-semibold">clean code</span>, designing systems that actually work, and 
                     always learning something new along the way.
                   </p>
-                  <p className="text-xl">
+                  <p className="text-lg">
                     When I'm not deep in logic, you'll find me crafting visual stories through <span className="coral-gradient-text font-bold">NR Creates</span> — 
                     where tech meets creativity.
                   </p>
-                  <p className="text-xl coral-gradient-text font-semibold">
+                  <p className="text-lg coral-gradient-text font-semibold">
                     Let's build something that matters.
                   </p>
-                  <div className="flex flex-wrap gap-3 mt-6">
-                    <span className="px-4 py-2 bg-[#FF7AA2]/20 rounded-full text-[#FF7AA2] font-medium">Backend Development</span>
-                    <span className="px-4 py-2 bg-[#FF6868]/20 rounded-full text-[#FF6868] font-medium">Problem Solving</span>
-                    <span className="px-4 py-2 bg-[#FFB3B3]/20 rounded-full text-[#FFB3B3] font-medium">Team Collaboration</span>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <span className="px-3 py-1 bg-[#FF7AA2]/20 rounded-full text-[#FF7AA2] font-medium text-sm">Backend Development</span>
+                    <span className="px-3 py-1 bg-[#FF6868]/20 rounded-full text-[#FF6868] font-medium text-sm">Problem Solving</span>
+                    <span className="px-3 py-1 bg-[#FFB3B3]/20 rounded-full text-[#FFB3B3] font-medium text-sm">Team Collaboration</span>
                   </div>
                 </div>
               </div>
 
               {/* Education Timeline */}
-              <div className="neon-card rounded-3xl p-8 hover-lift">
-                <h3 className="text-2xl font-playfair font-semibold text-white mb-6 coral-gradient-text">Education</h3>
+              <div className="neon-card rounded-2xl p-6 hover-lift">
+                <h3 className="text-xl font-playfair font-semibold text-white mb-4 coral-gradient-text">Education</h3>
                 <div className="space-y-6">
                   {education.map((item, index) => (
                     <div key={index} className="flex items-start space-x-4 group">

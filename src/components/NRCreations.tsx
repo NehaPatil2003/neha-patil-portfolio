@@ -122,20 +122,12 @@ const NRCreations = () => {
               <div className="w-12 h-12 rounded-xl coral-gradient-bg mx-auto mb-3 flex items-center justify-center">
                 <Palette className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-lg font-playfair font-semibold coral-gradient-text mb-2">
-                Ready for Your Logo?
+              <h3 className="text-lg font-playfair font-semibold coral-gradient-text mb-4">
+                Available for Projects
               </h3>
-              <p className="text-[#CCCCCC] text-sm mb-4">
-                Available for projects — Let's create something amazing together.
-              </p>
-              <a 
-                href="https://www.instagram.com/NR_Designs_" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block coral-gradient-bg text-white px-6 py-2 rounded-xl font-medium hover:opacity-90 transition-opacity"
-              >
-                Follow @NR_Designs_
-              </a>
+              <div className="coral-gradient-bg text-white px-6 py-2 rounded-xl font-medium">
+                Available for Projects
+              </div>
             </div>
           </div>
         </div>

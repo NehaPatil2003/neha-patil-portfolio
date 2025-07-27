@@ -23,7 +23,7 @@ export const initializeCursor = () => {
 
 // Create sparkle effects
 const createSparkles = (x: number, y: number) => {
-  const sparkleCount = Math.floor(Math.random() * 2) + 4; // 4-5 sparkles
+  const sparkleCount = Math.floor(Math.random() * 2) + 5; // 5-6 sparkles
   
   for (let i = 0; i < sparkleCount; i++) {
     const sparkle = document.createElement('div');
