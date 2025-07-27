@@ -95,24 +95,26 @@ const Projects = () => {
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-4">
                     <div className="flex space-x-3">
-                      {project.links.live && (
+                      <a 
+                        href="https://github.com/NehaPatil2003" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
                         <Button size="sm" className="coral-gradient-bg text-white text-xs px-4 py-2">
                           <ExternalLink className="w-3 h-3 mr-1" />
                           Live
                         </Button>
-                      )}
-                      {project.links.github && (
+                      </a>
+                      <a 
+                        href="https://github.com/NehaPatil2003" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                      >
                         <Button size="sm" variant="outline" className="border-[#FF7AA2] text-[#FF7AA2] hover:bg-[#FF7AA2] hover:text-white text-xs px-4 py-2">
                           <Github className="w-3 h-3 mr-1" />
                           Code
                         </Button>
-                      )}
-                      {project.links.paper && (
-                        <Button size="sm" className="coral-gradient-bg text-white text-xs px-4 py-2">
-                          <ExternalLink className="w-3 h-3 mr-1" />
-                          Paper
-                        </Button>
-                      )}
+                      </a>
                     </div>
                   </div>
                 </div>

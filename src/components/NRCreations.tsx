@@ -64,12 +64,12 @@ const NRCreations = () => {
                        zIndex: 25
                      }}>
                   <img 
-                    src="/lovable-uploads/f718c78e-f386-4fec-a6e3-a378a8240f05.png" 
-                    alt="Creative Director"
+                    src="/lovable-uploads/ac8369e9-7c81-46d2-bb01-680667bfa382.png" 
+                    alt="Mind behind NR"
                     className="w-full h-full object-cover hover:scale-110 transition-all duration-700"
                     style={{
-                      filter: 'grayscale(100%) contrast(1.3) brightness(1.1)',
-                      objectPosition: 'center 30%'
+                      filter: 'grayscale(70%) contrast(1.2) brightness(1.05) sepia(10%)',
+                      objectPosition: 'center 25%'
                     }}
                   />
                 </div>
@@ -126,7 +126,7 @@ const NRCreations = () => {
                 Ready for Your Logo?
               </h3>
               <p className="text-[#CCCCCC] text-sm mb-4">
-                Available exclusively for projects. Let's create something amazing together.
+                Available for projects — Let's create something amazing together.
               </p>
               <a 
                 href="https://www.instagram.com/NR_Designs_" 

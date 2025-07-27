@@ -37,7 +37,7 @@ const About = () => {
             </h2>
             <div className="w-32 h-1 coral-gradient-bg mx-auto mb-10"></div>
             <p className="text-[#CCCCCC] max-w-3xl mx-auto text-lg leading-relaxed">
-              Passionate <span className="text-[#FF7AA2] font-semibold">IT Engineer</span> with a creative edge, bringing technical expertise and innovative solutions to transform ideas into reality.
+              Dedicated <span className="text-[#FF7AA2] font-semibold">IT Engineer</span> seeking opportunities to contribute to innovative teams and build impactful solutions.
             </p>
           </div>
 
@@ -45,23 +45,25 @@ const About = () => {
             {/* Profile Section */}
             <div className="relative">
               <div className="relative">
-                  <div className="w-80 h-80 mx-auto mb-6 relative transform hover:scale-105 transition-all duration-500">
-                    {/* Square photo box */}
-                    <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl profile-photo" 
+                  <div className="w-80 h-80 mx-auto mb-6 relative group">
+                    {/* Square photo box with enhanced animation */}
+                    <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl profile-photo transform transition-all duration-700 group-hover:scale-105" 
                          style={{
-                           transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg) translateY(-30px)',
-                           boxShadow: '0 30px 60px rgba(255, 104, 104, 0.5), 0 0 120px rgba(255, 122, 162, 0.4)',
+                           transform: 'perspective(1000px) rotateY(-8deg) rotateX(3deg)',
+                           boxShadow: '0 25px 50px rgba(255, 104, 104, 0.4), 0 0 100px rgba(255, 122, 162, 0.3)',
                            zIndex: 20
                          }}>
                       <img 
-                        src="/lovable-uploads/620baa25-54c0-4722-98f4-81d9b1bdfad1.png" 
+                        src="/lovable-uploads/ac8369e9-7c81-46d2-bb01-680667bfa382.png" 
                         alt="Neha Patil"
-                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
                         style={{
-                          filter: 'brightness(1.2) contrast(1.1)',
-                          objectPosition: 'center 20%'
+                          filter: 'brightness(1.1) contrast(1.05) saturate(1.1)',
+                          objectPosition: 'center 25%'
                         }}
                       />
+                      {/* Subtle overlay for depth */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
                   
                   {/* Floating elements around photo */}
@@ -103,8 +105,8 @@ const About = () => {
                   </p>
                   <div className="flex flex-wrap gap-3 mt-6">
                     <span className="px-4 py-2 bg-[#FF7AA2]/20 rounded-full text-[#FF7AA2] font-medium">Backend Development</span>
-                    <span className="px-4 py-2 bg-[#FF6868]/20 rounded-full text-[#FF6868] font-medium">System Architecture</span>
-                    <span className="px-4 py-2 bg-[#FFB3B3]/20 rounded-full text-[#FFB3B3] font-medium">Creative Design</span>
+                    <span className="px-4 py-2 bg-[#FF6868]/20 rounded-full text-[#FF6868] font-medium">Problem Solving</span>
+                    <span className="px-4 py-2 bg-[#FFB3B3]/20 rounded-full text-[#FFB3B3] font-medium">Team Collaboration</span>
                   </div>
                 </div>
               </div>
