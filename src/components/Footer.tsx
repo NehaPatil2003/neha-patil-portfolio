@@ -26,7 +26,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-center md:text-right">
               <p className="text-portfolio-grid-gray text-sm mb-2">
-                © 2024 Neha Hemant Patil. All rights reserved.
+                © 2025 Neha Hemant Patil. All rights reserved.
               </p>
               <p className="text-xs text-portfolio-grid-gray/70">
                 Designed with <span className="text-portfolio-coral animate-pulse">♥</span> by NR

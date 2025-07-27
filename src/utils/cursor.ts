@@ -15,5 +15,29 @@ export const initializeCursor = () => {
     // Use CSS custom properties to update position
     document.documentElement.style.setProperty('--cursor-x', `${mouseX}px`);
     document.documentElement.style.setProperty('--cursor-y', `${mouseY}px`);
+    
+    // Create multiple sparkles (5-6) when cursor moves
+    createSparkles(mouseX, mouseY);
   });
+};
+
+// Create sparkle effects
+const createSparkles = (x: number, y: number) => {
+  const sparkleCount = Math.floor(Math.random() * 2) + 5; // 5-6 sparkles
+  
+  for (let i = 0; i < sparkleCount; i++) {
+    const sparkle = document.createElement('div');
+    sparkle.className = 'cursor-sparkle';
+    sparkle.style.left = `${x + (Math.random() - 0.5) * 20}px`;
+    sparkle.style.top = `${y + (Math.random() - 0.5) * 20}px`;
+    
+    document.body.appendChild(sparkle);
+    
+    // Remove sparkle after animation
+    setTimeout(() => {
+      if (sparkle.parentNode) {
+        sparkle.parentNode.removeChild(sparkle);
+      }
+    }, 1000);
+  }
 };

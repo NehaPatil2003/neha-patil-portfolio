@@ -48,7 +48,7 @@ const NRCreations = () => {
             </div>
             <div className="w-16 h-1 coral-gradient-bg mx-auto mb-4 rounded-full"></div>
             <p className="text-[#CCCCCC] max-w-lg mx-auto text-sm">
-              Premium logo designs crafted with precision and creativity.
+              Where creativity meets code — Premium logos that make brands unforgettable.
             </p>
           </div>
 
@@ -82,7 +82,7 @@ const NRCreations = () => {
               
               {/* Bold title */}
               <div className="text-center mt-4 relative z-10">
-                <h4 className="text-xl font-playfair font-bold text-white">Creative Director</h4>
+                <h4 className="text-xl font-playfair font-bold text-white">Mind behind NR</h4>
                 <p className="text-[#FF7AA2] text-sm font-medium">Bold • Precise • Uncompromising</p>
               </div>
             </div>
@@ -94,7 +94,7 @@ const NRCreations = () => {
               <div key={project.id} className="group relative">
                 <div className="neon-card rounded-xl overflow-hidden hover-lift transition-all duration-500">
                   {/* Logo Display */}
-                  <div className="h-24 bg-gradient-to-br from-black to-black/80 relative flex items-center justify-center p-4">
+                  <div className="h-32 bg-gradient-to-br from-black to-black/80 relative flex items-center justify-center p-6">
                     <img 
                       src={project.image} 
                       alt={project.title}
@@ -126,11 +126,16 @@ const NRCreations = () => {
                 Ready for Your Logo?
               </h3>
               <p className="text-[#CCCCCC] text-sm mb-4">
-                Professional logo designs that make your brand unforgettable.
+                Available exclusively for projects. Let's create something amazing together.
               </p>
-              <button className="coral-gradient-bg text-white px-6 py-2 rounded-xl font-medium hover:opacity-90 transition-opacity">
-                Get Started
-              </button>
+              <a 
+                href="https://www.instagram.com/NR_Designs_" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block coral-gradient-bg text-white px-6 py-2 rounded-xl font-medium hover:opacity-90 transition-opacity"
+              >
+                Follow @NR_Designs_
+              </a>
             </div>
           </div>
         </div>

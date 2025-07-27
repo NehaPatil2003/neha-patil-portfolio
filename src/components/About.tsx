@@ -45,24 +45,24 @@ const About = () => {
             {/* Profile Section */}
             <div className="relative">
               <div className="relative">
-                <div className="w-80 h-80 mx-auto mb-6 relative transform hover:scale-105 transition-all duration-500">
-                  {/* Floating photo without box */}
-                  <div className="absolute inset-0 rounded-full overflow-hidden shadow-2xl profile-photo" 
-                       style={{
-                         transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg) translateY(-30px)',
-                         boxShadow: '0 30px 60px rgba(255, 104, 104, 0.5), 0 0 120px rgba(255, 122, 162, 0.4)',
-                         zIndex: 20
-                       }}>
-                    <img 
-                      src="/lovable-uploads/620baa25-54c0-4722-98f4-81d9b1bdfad1.png" 
-                      alt="Neha Patil"
-                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-                      style={{
-                        filter: 'brightness(1.2) contrast(1.1)',
-                        objectPosition: 'center 20%'
-                      }}
-                    />
-                  </div>
+                  <div className="w-80 h-80 mx-auto mb-6 relative transform hover:scale-105 transition-all duration-500">
+                    {/* Square photo box */}
+                    <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl profile-photo" 
+                         style={{
+                           transform: 'perspective(1000px) rotateY(-15deg) rotateX(5deg) translateY(-30px)',
+                           boxShadow: '0 30px 60px rgba(255, 104, 104, 0.5), 0 0 120px rgba(255, 122, 162, 0.4)',
+                           zIndex: 20
+                         }}>
+                      <img 
+                        src="/lovable-uploads/620baa25-54c0-4722-98f4-81d9b1bdfad1.png" 
+                        alt="Neha Patil"
+                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                        style={{
+                          filter: 'brightness(1.2) contrast(1.1)',
+                          objectPosition: 'center 20%'
+                        }}
+                      />
+                    </div>
                   
                   {/* Floating elements around photo */}
                   <div className="absolute -top-6 -right-6 w-16 h-16 coral-gradient-bg rounded-full flex items-center justify-center animate-bounce"
@@ -87,16 +87,19 @@ const About = () => {
                 <h3 className="text-3xl font-playfair font-bold text-white mb-8 coral-gradient-text">IT Engineer & Problem Solver</h3>
                 <div className="space-y-8 text-[#CCCCCC] leading-relaxed">
                   <p className="text-xl">
-                    <span className="coral-gradient-text font-bold text-2xl">Hello!</span> I'm Neha — a dedicated IT Engineer who transforms complex challenges into 
-                    <span className="text-[#FF7AA2] font-semibold"> elegant backend solutions</span> using Java, Spring Boot, and cutting-edge technologies.
+                    <span className="coral-gradient-text font-bold text-2xl">Hey,</span> I'm Neha — an IT Engineer who loves building meaningful solutions with 
+                    <span className="text-[#FF7AA2] font-semibold">Java, Spring Boot</span>, and a problem-solver's mindset.
                   </p>
                   <p className="text-xl">
-                    I specialize in <span className="text-[#FF7AA2] font-semibold">scalable architecture, clean code practices</span>, and building 
-                    robust systems that power digital innovation. My approach combines technical precision with creative problem-solving.
+                    I care about writing <span className="text-[#FF7AA2] font-semibold">clean code</span>, designing systems that actually work, and 
+                    always learning something new along the way.
                   </p>
                   <p className="text-xl">
-                    Beyond engineering, I channel my creativity through <span className="coral-gradient-text font-bold">NR Creates</span> — 
-                    my premium logo design brand where technical precision meets artistic vision.
+                    When I'm not deep in logic, you'll find me crafting visual stories through <span className="coral-gradient-text font-bold">NR Creates</span> — 
+                    where tech meets creativity.
+                  </p>
+                  <p className="text-xl coral-gradient-text font-semibold">
+                    Let's build something that matters.
                   </p>
                   <div className="flex flex-wrap gap-3 mt-6">
                     <span className="px-4 py-2 bg-[#FF7AA2]/20 rounded-full text-[#FF7AA2] font-medium">Backend Development</span>

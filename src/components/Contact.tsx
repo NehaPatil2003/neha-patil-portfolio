@@ -55,22 +55,22 @@ const Contact = () => {
     {
       icon: <Github className="w-6 h-6" />,
       label: 'GitHub',
-      value: '@nehapatil',
-      href: '#',
+      value: '@NehaPatil2003',
+      href: 'https://github.com/NehaPatil2003',
       color: 'from-[#FF7AA2] to-[#FFB3B3]'
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: 'LinkedIn',
       value: 'Neha Patil',
-      href: '#',
+      href: 'https://www.linkedin.com/in/neha-patil-013533243',
       color: 'from-[#FF6868] to-[#FF7AA2]'
     },
     {
       icon: <Award className="w-6 h-6" />,
       label: 'HackerRank',
-      value: '@nehapatil',
-      href: '#',
+      value: '@nehahpatil2003',
+      href: 'https://www.hackerrank.com/profile/nehahpatil2003',
       color: 'from-[#FF7AA2] to-[#FFB3B3]'
     }
   ];
@@ -183,6 +183,8 @@ const Contact = () => {
                     <a
                       key={index}
                       href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="group flex flex-col items-center p-4 rounded-xl bg-black/30 hover:bg-black/50 transition-all duration-300 hover:-translate-y-2"
                     >
                       <div className={`w-12 h-12 bg-gradient-to-br ${link.color} rounded-full flex items-center justify-center mb-3 text-white group-hover:scale-110 transition-transform duration-300`}>

@@ -144,13 +144,19 @@ const Projects = () => {
 
           {/* View More */}
           <div className="text-center mt-12">
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-[#FF7AA2]/40 text-[#FF7AA2] hover:bg-[#FF7AA2]/10 hover:text-white px-8 py-3"
+            <a 
+              href="https://github.com/NehaPatil2003" 
+              target="_blank" 
+              rel="noopener noreferrer"
             >
-              View All on GitHub
-            </Button>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-[#FF7AA2]/40 text-[#FF7AA2] hover:bg-[#FF7AA2]/10 hover:text-white px-8 py-3"
+              >
+                View All on GitHub
+              </Button>
+            </a>
           </div>
         </div>
       </div>
