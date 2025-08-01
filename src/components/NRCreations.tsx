@@ -34,7 +34,7 @@ const NRCreations = () => {
   };
 
   return (
-    <section id="creative-side" className="py-20 relative overflow-hidden">
+    <section id="creative-escape" className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
@@ -42,7 +42,7 @@ const NRCreations = () => {
             <div className="flex items-center justify-center mb-4">
               <Palette className="w-6 h-6 text-[#FF6868] mr-2" />
               <h2 className="text-3xl font-playfair font-bold text-white">
-                Creative Side Projects
+                Creative Escape
               </h2>
               <Sparkles className="w-6 h-6 text-[#FF6868] ml-2" />
             </div>
@@ -52,9 +52,18 @@ const NRCreations = () => {
           {/* Content */}
           <div className="neon-card rounded-xl p-8">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-playfair font-semibold coral-gradient-text mb-4">
-                🎨 Creative Outlet — NR Creates
-              </h3>
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+                  <img 
+                    src="/lovable-uploads/d96a25fd-6f3d-44fa-8fca-cfc33d5a81c6.png" 
+                    alt="Neha Patil"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-2xl font-playfair font-semibold coral-gradient-text">
+                  🎨 Where Tech Meets Art — NR Creates
+                </h3>
+              </div>
               <p className="text-[#CCCCCC] mb-6 leading-relaxed">
                 While my core focus is backend engineering, I enjoy exploring design through my creative side project — <strong className="text-white">NR Creates</strong>.
               </p>

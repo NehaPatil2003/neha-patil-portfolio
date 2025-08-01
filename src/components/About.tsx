@@ -90,7 +90,7 @@ const About = () => {
                 <h3 className="text-2xl font-playfair font-bold text-white mb-6 coral-gradient-text">IT Engineer & Problem Solver</h3>
                 <div className="space-y-6 text-[#CCCCCC] leading-relaxed">
                   <p className="text-lg">
-                    <span className="coral-gradient-text font-bold text-xl">Hey,</span> I'm Neha — an IT Engineer who loves building meaningful solutions with 
+                    <span className="coral-gradient-text font-bold text-xl">Hey,</span> I'm Neha — an IT Engineer passionate about crafting practical backend solutions with 
                     <span className="text-[#FF7AA2] font-semibold">Java, Spring Boot</span>, and a problem-solver's mindset.
                   </p>
                   <p className="text-lg">
@@ -106,8 +106,9 @@ const About = () => {
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <span className="px-3 py-1 bg-[#FF7AA2]/20 rounded-full text-[#FF7AA2] font-medium text-sm">Backend Development</span>
-                    <span className="px-3 py-1 bg-[#FF6868]/20 rounded-full text-[#FF6868] font-medium text-sm">Problem Solving</span>
-                    <span className="px-3 py-1 bg-[#FFB3B3]/20 rounded-full text-[#FFB3B3] font-medium text-sm">Team Collaboration</span>
+                    <span className="px-3 py-1 bg-[#FF6868]/20 rounded-full text-[#FF6868] font-medium text-sm">Frontend Development</span>
+                    <span className="px-3 py-1 bg-[#FFB3B3]/20 rounded-full text-[#FFB3B3] font-medium text-sm">Problem Solving</span>
+                    <span className="px-3 py-1 bg-[#FF7AA2]/20 rounded-full text-[#FF7AA2] font-medium text-sm">Team Collaboration</span>
                   </div>
                 </div>
               </div>
