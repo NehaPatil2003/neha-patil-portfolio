@@ -46,16 +46,18 @@ const About = () => {
             <div className="relative">
               <div className="relative">
                   <div className="w-72 h-72 mx-auto mb-6 relative group">
-                    {/* Professional square photo box */}
-                    <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl profile-photo transform transition-all duration-500 group-hover:scale-105" 
+                    {/* Professional square photo box - fixed position */}
+                    <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl profile-photo border-2 border-[#FF7AA2]/20" 
                          style={{
                            boxShadow: '0 20px 40px rgba(255, 104, 104, 0.3), 0 0 80px rgba(255, 122, 162, 0.2)',
-                           zIndex: 20
+                           zIndex: 20,
+                           position: 'sticky',
+                           top: '2rem'
                          }}>
                       <img 
                         src="/lovable-uploads/5c56ce14-3d2e-433e-81ab-ebf9bf063a80.png" 
                         alt="Neha Patil"
-                        className="w-full h-full object-cover transition-all duration-500"
+                        className="w-full h-full object-cover"
                         style={{
                           filter: 'brightness(1.05) contrast(1.02)',
                           objectPosition: 'center'

@@ -40,7 +40,7 @@ const Navigation = () => {
     { href: '#about', label: 'About' },
     { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
-    { href: '#nr-creates', label: 'NR Creates', isSpecial: true },
+    { href: '#nr-creates', label: 'Hobby', isSpecial: true },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -52,6 +52,13 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
+            <div className="w-8 h-8 rounded-full overflow-hidden">
+              <img 
+                src="/lovable-uploads/5c56ce14-3d2e-433e-81ab-ebf9bf063a80.png" 
+                alt="Neha Patil"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <span className="text-white font-playfair font-semibold text-xl">Neha Patil</span>
             <span className="text-[#CCCCCC] text-sm">IT Engineer</span>
           </div>

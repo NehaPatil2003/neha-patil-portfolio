@@ -134,7 +134,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="bg-black/50 border-[#CCCCCC]/30 text-white focus:border-[#FF6868] min-h-[120px]"
-                    placeholder="Tell me about your project..."
+                    placeholder="Message"
                     required
                   />
                 </div>
@@ -205,9 +205,6 @@ const Contact = () => {
                 <h3 className="text-xl font-playfair font-semibold text-white mb-2">
                   Available for Projects
                 </h3>
-                <p className="text-[#CCCCCC] text-sm">
-                  Currently accepting new freelance projects and collaboration opportunities.
-                </p>
               </div>
             </div>
           </div>

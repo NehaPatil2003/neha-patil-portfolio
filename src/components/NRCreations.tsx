@@ -69,18 +69,44 @@ const NRCreations = () => {
                 This includes lightweight collaborations like:
               </h4>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="flex items-center space-x-3 p-4 rounded-lg bg-black/30">
-                  <span className="text-2xl">📰</span>
+                <div className="flex items-center space-x-3 p-4 rounded-lg bg-black/30 border border-[#FF7AA2]/20">
+                  <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/ca48b290-2259-4d9b-837d-5f4a76e2e1be.png" 
+                      alt="Yawal News Logo"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <div>
                     <h5 className="text-white font-medium">Yawal News</h5>
                     <p className="text-[#CCCCCC] text-sm">Media Portal Branding</p>
                   </div>
+                  <div className="w-8 h-8 rounded-full overflow-hidden ml-auto">
+                    <img 
+                      src="/lovable-uploads/4c8d6a1c-1fe6-431b-b3fe-7968a07a9d5e.png" 
+                      alt="NR Logo"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3 p-4 rounded-lg bg-black/30">
-                  <span className="text-2xl">🧪</span>
+                <div className="flex items-center space-x-3 p-4 rounded-lg bg-black/30 border border-[#FF7AA2]/20">
+                  <div className="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/e0e5aaa2-ed81-4254-b4f9-49fcc30f3f33.png" 
+                      alt="Sudarshan Lab Logo"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                   <div>
-                    <h5 className="text-white font-medium">Studarshan Digital</h5>
+                    <h5 className="text-white font-medium">Sudarshan Lab</h5>
                     <p className="text-[#CCCCCC] text-sm">Digital Lab Identity</p>
+                  </div>
+                  <div className="w-8 h-8 rounded-full overflow-hidden ml-auto">
+                    <img 
+                      src="/lovable-uploads/4c8d6a1c-1fe6-431b-b3fe-7968a07a9d5e.png" 
+                      alt="NR Logo"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
