@@ -47,8 +47,8 @@ const NRCreations = () => {
               <Crown className="w-6 h-6 text-[#FF6868] ml-2" />
             </div>
             <div className="w-16 h-1 coral-gradient-bg mx-auto mb-4 rounded-full"></div>
-            <p className="text-[#CCCCCC] max-w-lg mx-auto text-sm">
-              Where creativity meets code — Premium logos that make brands unforgettable.
+            <p className="text-[#CCCCCC] max-w-lg mx-auto text-sm typewriter-text animate-fade-in">
+              Where creativity meets code — logos that live beyond pixels.
             </p>
           </div>
 
@@ -125,8 +125,16 @@ const NRCreations = () => {
               <h3 className="text-lg font-playfair font-semibold coral-gradient-text mb-4">
                 Available for Projects
               </h3>
-              <div className="coral-gradient-bg text-white px-6 py-2 rounded-xl font-medium">
-                Available for Projects
+              <div className="flex items-center justify-center space-x-4 mt-4">
+                <a 
+                  href="https://instagram.com/nr_creates__" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2 text-[#FF7AA2] hover:text-white transition-colors duration-300"
+                >
+                  <Instagram className="w-5 h-5" />
+                  <span className="text-sm">@nr_creates__</span>
+                </a>
               </div>
             </div>
           </div>

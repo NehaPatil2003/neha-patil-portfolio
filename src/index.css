@@ -210,6 +210,24 @@
   }
 }
 
+/* Typewriter Effect */
+.typewriter-text {
+  overflow: hidden;
+  border-right: 2px solid #FF6868;
+  white-space: nowrap;
+  animation: typewriter 3s steps(50, end), blink 1s step-end infinite;
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #FF6868; }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

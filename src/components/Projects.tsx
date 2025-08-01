@@ -94,17 +94,7 @@ const Projects = () => {
                     </div>
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center pb-4">
-                    <div className="flex space-x-3">
-                      <a 
-                        href="https://github.com/NehaPatil2003" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        <Button size="sm" className="coral-gradient-bg text-white text-xs px-4 py-2">
-                          <ExternalLink className="w-3 h-3 mr-1" />
-                          Live
-                        </Button>
-                      </a>
+                    <div className="flex justify-center">
                       <a 
                         href="https://github.com/NehaPatil2003" 
                         target="_blank" 
