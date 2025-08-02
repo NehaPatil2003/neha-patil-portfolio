@@ -1,4 +1,4 @@
-# 💖 Neha Patil – Portfolio Website
+# Neha Patil – Portfolio Website
 
 Welcome to the source code of **my personal portfolio website**, built with ❤️ to showcase my journey as an IT Engineer and creative designer.  
 It blends **tech precision** with **design passion**, highlighting my work, skills, projects, and personal brand *NR*.
