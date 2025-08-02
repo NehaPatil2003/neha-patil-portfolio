@@ -53,7 +53,7 @@ const NRCreations = () => {
           <div className="neon-card rounded-xl p-8">
             <div className="text-center mb-8">
               <div className="flex items-center justify-center mb-4">
-                <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
                   <img 
                     src="/lovable-uploads/d96a25fd-6f3d-44fa-8fca-cfc33d5a81c6.png" 
                     alt="Neha Patil"

@@ -56,6 +56,15 @@ const Projects = () => {
         github: '#'
       },
       featured: true
+    },
+    {
+      title: 'Emotion Detector',
+      description: 'Advanced emotion recognition system for real-time facial expression analysis.',
+      tech: ['Python', 'Java Spring Boot', 'Machine Learning'],
+      image: '/lovable-uploads/emotion-detector.png',
+      links: {
+        github: '#'
+      }
     }
   ];
 

@@ -37,7 +37,7 @@ const About = () => {
             </h2>
             <div className="w-32 h-1 coral-gradient-bg mx-auto mb-10"></div>
             <p className="text-[#CCCCCC] max-w-2xl mx-auto text-lg leading-relaxed">
-              Passionate <span className="text-[#FF7AA2] font-semibold">IT Engineer</span> with expertise in Java, Spring Boot, and full-stack development.
+              Passionate <span className="text-[#FF7AA2] font-semibold">IT Engineer</span> in Java, Spring Boot, and full-stack development.
             </p>
           </div>
 

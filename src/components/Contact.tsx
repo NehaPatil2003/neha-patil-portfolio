@@ -72,6 +72,20 @@ const Contact = () => {
       value: '@nehahpatil2003',
       href: 'https://www.hackerrank.com/profile/nehahpatil2003',
       color: 'from-[#FF7AA2] to-[#FFB3B3]'
+    },
+    {
+      icon: <Award className="w-6 h-6" />,
+      label: 'LeetCode',
+      value: '@nehapatil2003',
+      href: 'https://leetcode.com/u/nehapatil2003',
+      color: 'from-[#FF6868] to-[#FF7AA2]'
+    },
+    {
+      icon: <Award className="w-6 h-6" />,
+      label: 'CodeChef',
+      value: '@patilneha2003',
+      href: 'https://www.codechef.com/users/patilneha2003',
+      color: 'from-[#FF7AA2] to-[#FFB3B3]'
     }
   ];
 
@@ -86,7 +100,7 @@ const Contact = () => {
             </h2>
             <div className="w-24 h-1 coral-gradient-bg mx-auto mb-8"></div>
             <p className="text-[#CCCCCC] max-w-2xl mx-auto">
-              Ready to collaborate on your next project? I'd love to hear from you.
+              Ready to connect? I'd love to hear from you.
             </p>
           </div>
 
@@ -178,7 +192,7 @@ const Contact = () => {
                 <h3 className="text-2xl font-playfair font-semibold text-white mb-6">
                   Find Me Online
                 </h3>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
                   {socialLinks.map((link, index) => (
                     <a
                       key={index}
@@ -197,15 +211,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Availability */}
-              <div className="neon-card rounded-2xl p-8 text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
-                </div>
-                <h3 className="text-xl font-playfair font-semibold text-white mb-2">
-                  Available for Projects
-                </h3>
-              </div>
             </div>
           </div>
         </div>
